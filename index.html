@@ -26,14 +26,15 @@
         <link rel="preconnect" href="cdn.jsdelivr.net">
         <link rel="dns-prefetch" href="cdn.jsdelivr.net">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js" integrity="sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
         <script src="/assets/js/custom/clipboard-copy.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/ejs@3.1.6/ejs.min.js" integrity="sha256-mOsgtygNfXBUPc/+cc19yr+g0jieqYOgRL5xFD2sC0Y=" crossorigin="anonymous"></script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/he/1.2.0/he.min.js" integrity="sha512-PEsccDx9jqX6Dh4wZDCnWMaIO3gAaU0j46W//sSqQhUQxky6/eHZyeB3NrXD2xsyugAKd4KPiDANkcuoEa2JuA==" crossorigin="anonymous"></script>
         
@@ -41,67 +42,272 @@
 
         <link rel="stylesheet" href="/assets/css/main.css" />
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jarallax@2.0.4/dist/jarallax.css" integrity="sha256-/a0I9OFWuIXZRhqSuqIj8g0NUYSID+mwuyOuuFZb12A=" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jarallax@2.0.4/dist/jarallax.min.js" integrity="sha256-uCknJLYMrtYTPwl8PwQnFj6T6Hck2oSGEZLhMi1BRvU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jarallax@2.0.4/dist/jarallax-video.min.js" integrity="sha256-zYuE44YyKYv3Y4xv38UkxBY4jFCzAmAxwJ2nfRj16WI=" crossorigin="anonymous"></script>
+        <script>
+            function InitParallax() {
+                jarallax(document.querySelectorAll('.jarallax'), {
+                    speed: 0.2, 
+                    disableVideo: /iPad|iPhone|iPod|Android/
+                });
+            }
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            function InitTyped() {
+                // sample:
+                // <span class="text-success">ever created for
+                //   <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span>
+                //   <span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+                // </span>
+                document.querySelectorAll("[data-typed]").forEach(e => {
+                    const t = {
+                        typeSpeed: 40,
+                        backSpeed: 10,
+                        backDelay: 2e3,
+                        loop: true,
+                        replaceBaseText : true, /* future feature */
+                        autoInsertCss: true,
+                        ...e.dataset.typed ? JSON.parse(e.dataset.typed) : {}
+                    };
+
+                    var typed = new Typed(e, t);
+                });
+            }         
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous">
+        <script>
+            function InitAOS() {
+                AOS.init({ duration: 1000, offset:0 });
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+        <script>
+            function InitCounters() {
+                new PureCounter();
+            }
+        </script>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" integrity="sha256-bT9i1NF5afnHDpQ4z2cQBHJQGehoEj8uvClaAG+NXS0=" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js" integrity="sha256-A9/h+86SqfF/zRoVASE72CDQUKsIXDOEGasGo2MclFk=" crossorigin="anonymous"></script>
+        <script>
+            function InitLightbox() {
+                GLightbox({});
+            }
+        </script>
+
+        <!-- <style></style> -->
+<style>
+
+  :root {
+    --landing-min-height: 40vh;
+    --landing-hint-overlap: 20vh;
+  }
+
+  /*
+  Copyright
+  */
+  .company-ih,
+  .company-wcusa {
+    // can display
+  }
+
+  .company-ups {
+    // display: none;
+  }
+
+  /*
+  Landing with "hints"
+  */
+
+  .landing-hint {
+    // NOTE: might need some extra button to scroll down on some huge screen-sizes, so rather using simple bottom margin...
+    // min-height: calc(100vh - var(--navbar-main-min-height));
+    // NOTE: next section: trivia provides margins
+    // margin-bottom: 5em;
+  }
+
+  .landing {
+    font-family: var(--font-family-tall);
+    min-height: var(--landing-min-height);
+    padding-bottom: calc(0em + var(--landing-hint-overlap));
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 40%) !important;
+  }
+
+  .landing .news {
+
+  }
+
+  .landing .content {
+    color: var(--bs-white);
+  }
+
+  .hints {        
+    margin-top: calc(-1 * var(--landing-hint-overlap));
+    font-family: var(--font-family-wide);
+  }
+
+  .hints .content {
+    padding: 0;
+
+    color: var(--bs-light);
+    background: var(--bs-dark);
+    border: 1px solid var(--bs-dark);      
+  }
+
+  .hints .partner-simplyput {
+    filter: brightness(2.5);
+  }
+
+  /*
+  The rest
+  */
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, calc(2/3));
+  }
+
+  .btn {
+    margin: .25em;
+  }
+
+  *:not(.bypass-text-highlight) > .text-highlight {
+    color: var(--color-highlight);
+  }
+
+  .top-delimiter {
+    border-top: .25em solid var(--color-delimiter);      
+  }
+  
+  .bottom-delimiter {
+    border-bottom: .25em solid var(--color-delimiter);      
+  }
+
+  .services {
+    color: black !important;
+  }
+
+  .services .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .fa-linkedin {
+    color: #0a66c2;
+    color: var(--bs-light);
+  }
+
+  .fa-file-contract {
+    color: var(--bs-light);
+  }
+
+  .case-studies .heading {
+    background-color: var(--bs-dark) !important;
+    color: var(--bs-light) !important;
+  }
+
+  .case-studies .accordion .accordion-item {
+      background-color: rgba(255, 255, 255, .90) !important;
+      color: var(--bs-dark) !important;
+  }
+
+  .case-studies .accordion .accordion-button {
+    background-color: var(--bs-dark) !important;
+    color: var(--bs-light) !important;
+  }
+
+</style>
+
     </head>
-    <body>
+    <body class="fit-height">
 
         <header class="sticky-top">
-            <nav class="navbar navbar-this navbar-expand-lg">
+            <nav id="navbar-main" class="navbar-main navbar navbar-expand-lg">
 
     <div class="container">
 
         <a class="navbar-brand align-middle" href="#">
-            <img src="/assets/logo.png" />
+            <img src="/assets/reflection logo.png" />
         </a>
 
         <div class="ms-auto mx-2"></div>
 
         <!-- standalone search bar activator (below navigation) -->
-        <a type="button" role="button" class="btn border-0 me-2 d-lg-none"
+        <a type="button" role="button" class="btn border-0 me-2 d-lg-none d-none-important"
             data-bs-toggle="collapse" data-bs-target="#blog-search-bar">
             <!-- d-sm-none = hide if above sm -->
-            <i class="fas fa-search"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
         </a>
 
         <button type="button" class="btn navbar-toggler"
             data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <!-- Using navbar-toggler fix in main.scss and FA icons instead of: <span class="navbar-toggler-icon"></span> -->
-            <i class="fas fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-sm-0">
+            <ul class="navbar-nav d-flex flex-row flex-wrap align-items-center bd-navbar-nav pt-2 py-sm-0 px-5 w-100">
 
                 <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link p-2" href="/">Home</a>
+                    <a class="nav-link default p-2" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item col-6 col-lg-auto">
+                    <a class="nav-link p-2" href="/#who-what-services">Who / Services</a>
                 </li>
 
                 <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link p-2" href="/posts/1/">Posts</a>
+                    <a class="nav-link p-2" href="/#case-studies">Case Studies</a>
                 </li>
 
                 <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link p-2" href="/tags">Tags</a>
+                    <a class="nav-link p-2" href="/projects">Projects</a>
                 </li>
 
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link p-2" href="/categories">Categories</a>
-                </li>
+                <div class="ms-auto mx-2"></div>
 
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link p-2" href="/series">Series</a>
-                </li>
+                <li class="nav-item dropdown col-12 col-lg-auto d-none-important">
+                    <hr class="d-block d-lg-none" />
+                    <a class="d-inline-flex nav-link p-2" href="/posts/1/">Posts</a>
+                    <a class="d-inline-flex nav-link no-dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-hover="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-angles-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/tags">Tags</a></li>
+                        <li><a class="dropdown-item" href="/categories">Categories</a></li>
+                        <li><a class="dropdown-item" href="/series">Series</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/tags-cloud">Tags cloud</a></li>
+                    </ul>
+                </li>      
 
             </ul>
 
         </div>
 
         <!-- inline search-bar with same expand breakpoint as navigation -->
-        <nav class="nav-search d-none d-lg-inline">
+        <nav class="nav-search d-none d-lg-inline d-none-important">
             <!-- hidden by def., visible (block) aft. size SM -->
             <div class="inline-input-group inline-text-right">
-                <span class="inline-text"><i class="fas fa-search"></i></span>
+                <span class="inline-text"><i class="fa-solid fa-magnifying-glass"></i></span>
                 <input type="text" class="blog-search-input form-control py-0" placeholder="Search...">
             </div>
         </nav>
@@ -110,15 +316,18 @@
 
 </nav>
 
-<!-- standalone search bar (below navigation) with same breakpoint as navigation (shown on collapse) -->
-<nav class="nav-search-below d-lg-none collapse p-3" id="blog-search-bar">
+<!-- 
+standalone search bar (below navigation) with same breakpoint as navigation (shown on collapse)
+d-sm-none = hide if above sm
+-->
+<nav class="nav-search-below d-lg-none collapse d-none-important" id="blog-search-bar">
     <div class="container">
-        <!-- d-sm-none = hide if above sm -->
-        <div class="inline-input-group inline-text-left">
-            <span class="inline-text"><i class="fas fa-search"></i></span>
-            <input type="text" class="blog-search-input form-control" placeholder="Search...">
+        <div class="p-3">
+            <div class="inline-input-group inline-text-left">
+                <span class="inline-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="blog-search-input form-control" placeholder="Search...">
+            </div>
         </div>
-
     </div>
 </nav>
         </header>
@@ -129,1632 +338,602 @@
 
     
 
-    <div class="container">
+    <div id="wrapper">
 
-        <div id="global-content-view" class="row pt-3">
+        <div id="content-container" class="hide-on-search-results-container-display">
 
-            <div class="col-12 col-xl-12 p-0 overflow-hidden">
-                
+            <div class="row g-0">
 
-    <section class="article print-container p-3 mb-3">
-        
-This is the main static WWW page!
+                <div class="main-container col-12 col-xl-12 overflow-hidden">
+                    
+                        
 
-<div class="container">
 
-  <!-- Navbar
-  ================================================== -->
-  <div class="bs-docs-section clearfix">
-	<div class="row">
-	  <div class="col-lg-12">
-		<div class="page-header">
-		  <h1 id="navbars">Navbars</h1>
-		</div>
+<!-- Content wrapper (due to AOS.JS we need overflow hidden here) -->
+<div id="home" class="overflow-hidden hide-on-search-results-container-display bg-light">   
 
-		<div class="bs-component">
-		  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			<div class="container-fluid">
-			  <a class="navbar-brand" href="#">Navbar</a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
+  <!-- LANDING + HINT -->
+  <div class="landing-hint">
 
-			  <div class="collapse navbar-collapse" id="navbarColor01">
-				<ul class="navbar-nav me-auto">
-				  <li class="nav-item">
-					<a class="nav-link active" href="#">Home
-					  <span class="visually-hidden">(current)</span>
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-					<div class="dropdown-menu">
-					  <a class="dropdown-item" href="#">Action</a>
-					  <a class="dropdown-item" href="#">Another action</a>
-					  <a class="dropdown-item" href="#">Something else here</a>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="#">Separated link</a>
-					</div>
-				  </li>
-				</ul>
-				<form class="d-flex">
-				  <input class="form-control me-sm-2" type="text" placeholder="Search">
-				  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-				</form>
-			  </div>
-			</div>
-		  </nav>
-		</div>
+    <!-- ST: LANDING -->
+    <section class="jarallax landing" data-jarallax data-video-src="mp4:/assets/bg/team/pexels-edmond-dantes-production ID_4427212.mp4">
 
-		<div class="bs-component">
-		  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div class="container-fluid">
-			  <a class="navbar-brand" href="#">Navbar</a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
+      <div class="overlay"></div>
 
-			  <div class="collapse navbar-collapse" id="navbarColor02">
-				<ul class="navbar-nav me-auto">
-				  <li class="nav-item">
-					<a class="nav-link active" href="#">Home
-					  <span class="visually-hidden">(current)</span>
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-					<div class="dropdown-menu">
-					  <a class="dropdown-item" href="#">Action</a>
-					  <a class="dropdown-item" href="#">Another action</a>
-					  <a class="dropdown-item" href="#">Something else here</a>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="#">Separated link</a>
-					</div>
-				  </li>
-				</ul>
-				<form class="d-flex">
-				  <input class="form-control me-sm-2" type="text" placeholder="Search">
-				  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-				</form>
-			  </div>
-			</div>
-		  </nav>
-		</div>
+      <img class="jarallax-img" src="/assets/bg/handshake/pexels-fauxels-3183197.jpg">
 
-		<div class="bs-component">
-		  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-			  <a class="navbar-brand" href="#">Navbar</a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
+      <div class="container p-0">
 
-			  <div class="collapse navbar-collapse" id="navbarColor03">
-				<ul class="navbar-nav me-auto">
-				  <li class="nav-item">
-					<a class="nav-link active" href="#">Home
-					  <span class="visually-hidden">(current)</span>
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-					<div class="dropdown-menu">
-					  <a class="dropdown-item" href="#">Action</a>
-					  <a class="dropdown-item" href="#">Another action</a>
-					  <a class="dropdown-item" href="#">Something else here</a>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="#">Separated link</a>
-					</div>
-				  </li>
-				</ul>
-				<form class="d-flex">
-				  <input class="form-control me-sm-2" type="text" placeholder="Search">
-				  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-				</form>
-			  </div>
-			</div>
-		  </nav>
-		</div>
+        <div class="p-5 g-5 d-flex flex-column">
 
-	  </div>
-	</div>
-  </div>
+          <div class="d-none row mt-n3 mb-3">
+            <div class="col align-items-center" data-aos="fade-down">
+              <div class="news d-inline">
+                New articles available!
+              </div>
+            </div>
+          </div>
 
-  <!-- Buttons
-  ================================================== -->
-  <div class="bs-docs-section">
-	<div class="page-header">
-	  <div class="row">
-		<div class="col-lg-12">
-		  <h1 id="buttons">Buttons</h1>
-		</div>
-	  </div>
-	</div>
+          <div class="row flex-grow-1 align-items-center justify-content-center">
 
-	<div class="row">
-	  <div class="col-lg-7">
-		<p class="bs-component">
-		  <button type="button" class="btn btn-primary">Primary</button>
-		  <button type="button" class="btn btn-secondary">Secondary</button>
-		  <button type="button" class="btn btn-success">Success</button>
-		  <button type="button" class="btn btn-info">Info</button>
-		  <button type="button" class="btn btn-warning">Warning</button>
-		  <button type="button" class="btn btn-danger">Danger</button>
-		  <button type="button" class="btn btn-light">Light</button>
-		  <button type="button" class="btn btn-dark">Dark</button>
-		  <button type="button" class="btn btn-link">Link</button>
-		</p>
+            <div class="col align-items-center" data-aos="zoom-in">
+            
+              <div class="content">
 
-		<p class="bs-component">
-		  <button type="button" class="btn btn-primary disabled">Primary</button>
-		  <button type="button" class="btn btn-secondary disabled">Secondary</button>
-		  <button type="button" class="btn btn-success disabled">Success</button>
-		  <button type="button" class="btn btn-info disabled">Info</button>
-		  <button type="button" class="btn btn-warning disabled">Warning</button>
-		  <button type="button" class="btn btn-danger disabled">Danger</button>
-		  <button type="button" class="btn btn-light disabled">Light</button>
-		  <button type="button" class="btn btn-dark disabled">Dark</button>
-		  <button type="button" class="btn btn-link disabled">Link</button>
-		</p>
+                <h1 class="display-1 my-3 skip-text-highlight fw-bold">$100K EXPENSES</h1>
+                <p class="lead my-3">on project failures</p>
+                <p class="lead my-3">and maintenance costs for a badly designed project</p>
 
-		<p class="bs-component">
-		  <button type="button" class="btn btn-outline-primary">Primary</button>
-		  <button type="button" class="btn btn-outline-secondary">Secondary</button>
-		  <button type="button" class="btn btn-outline-success">Success</button>
-		  <button type="button" class="btn btn-outline-info">Info</button>
-		  <button type="button" class="btn btn-outline-warning">Warning</button>
-		  <button type="button" class="btn btn-outline-danger">Danger</button>
-		  <button type="button" class="btn btn-outline-light">Light</button>
-		  <button type="button" class="btn btn-outline-dark">Dark</button>
-		</p>
+                <p class="lead text-uppercase skip-text-highlight skip-fw-bold" style="height: 3em;">
+                  <span data-typed='{"strings": ["We can do better!", "Save your company from these disasters!", "Let us make you the HERO!"]}'></span>
+                </p>
 
-		<div class="bs-component">
-		  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-			<button type="button" class="btn btn-primary">Primary</button>
-			<div class="btn-group" role="group">
-			  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-			  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-				<a class="dropdown-item" href="#">Dropdown link</a>
-				<a class="dropdown-item" href="#">Dropdown link</a>
-			  </div>
-			</div>
-		  </div>
+                <p class="story text-uppercase">
+                  See how we have <span class="text-highlight">rescued and rebuilt</span> the core internal management software of a <span class="text-highlight">$150 Million Covid Testing and Vaccination company</span> within 2 months!
+                </p>
 
-		  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-			<button type="button" class="btn btn-success">Success</button>
-			<div class="btn-group" role="group">
-			  <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-			  <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
-				<a class="dropdown-item" href="#">Dropdown link</a>
-				<a class="dropdown-item" href="#">Dropdown link</a>
-			  </div>
-			</div>
-		  </div>
-
-		  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-			<button type="button" class="btn btn-info">Info</button>
-			<div class="btn-group" role="group">
-			  <button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-			  <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
-				<a class="dropdown-item" href="#">Dropdown link</a>
-				<a class="dropdown-item" href="#">Dropdown link</a>
-			  </div>
-			</div>
-		  </div>
-
-		  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-			<button type="button" class="btn btn-danger">Danger</button>
-			<div class="btn-group" role="group">
-			  <button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-			  <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
-				<a class="dropdown-item" href="#">Dropdown link</a>
-				<a class="dropdown-item" href="#">Dropdown link</a>
-			  </div>
-			</div>
-		  </div>
-		</div>
-
-		<div class="bs-component">
-		  <button type="button" class="btn btn-primary btn-lg">Large button</button>
-		  <button type="button" class="btn btn-primary">Default button</button>
-		  <button type="button" class="btn btn-primary btn-sm">Small button</button>
-		</div>
-	  </div>
-	  <div class="col-lg-5">
-		<div class="bs-component">
-		  <div class="d-grid gap-2">
-			<button class="btn btn-lg btn-primary" type="button">Block button</button>
-			<button class="btn btn-lg btn-primary" type="button">Block button</button>
-		  </div>
-		</div>
-
-		<div class="bs-component mb-3">
-		  <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-			<input type="checkbox" class="btn-check" id="btncheck1" checked="" autocomplete="off">
-			<label class="btn btn-primary" for="btncheck1">Checkbox 1</label>
-			<input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-			<label class="btn btn-primary" for="btncheck2">Checkbox 2</label>
-			<input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-			<label class="btn btn-primary" for="btncheck3">Checkbox 3</label>
-		  </div>
-		</div>
-
-		<div class="bs-component mb-3">
-		  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-			<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
-			<label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
-			<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked="">
-			<label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
-			<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked="">
-			<label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
-		  </div>
-		</div>
-
-		<div class="bs-component">
-		  <div class="btn-group-vertical">
-			<button type="button" class="btn btn-primary">Button</button>
-			<button type="button" class="btn btn-primary">Button</button>
-			<button type="button" class="btn btn-primary">Button</button>
-			<button type="button" class="btn btn-primary">Button</button>
-			<button type="button" class="btn btn-primary">Button</button>
-			<button type="button" class="btn btn-primary">Button</button>
-		  </div>
-		</div>
-
-		<div class="bs-component mb-3">
-		  <div class="btn-group" role="group" aria-label="Basic example">
-			<button type="button" class="btn btn-secondary">Left</button>
-			<button type="button" class="btn btn-secondary">Middle</button>
-			<button type="button" class="btn btn-secondary">Right</button>
-		  </div>
-		</div>
-
-		<div class="bs-component mb-3">
-		  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-			<div class="btn-group me-2" role="group" aria-label="First group">
-			  <button type="button" class="btn btn-secondary">1</button>
-			  <button type="button" class="btn btn-secondary">2</button>
-			  <button type="button" class="btn btn-secondary">3</button>
-			  <button type="button" class="btn btn-secondary">4</button>
-			</div>
-			<div class="btn-group me-2" role="group" aria-label="Second group">
-			  <button type="button" class="btn btn-secondary">5</button>
-			  <button type="button" class="btn btn-secondary">6</button>
-			  <button type="button" class="btn btn-secondary">7</button>
-			</div>
-			<div class="btn-group" role="group" aria-label="Third group">
-			  <button type="button" class="btn btn-secondary">8</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-  </div>
-
-  <!-- Typography
-  ================================================== -->
-  <div class="bs-docs-section">
-	<div class="row">
-	  <div class="col-lg-12">
-		<div class="page-header">
-		  <h1 id="typography">Typography</h1>
-		</div>
-	  </div>
-	</div>
-
-	<!-- Headings -->
-
-	<div class="row">
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <h1>Heading 1</h1>
-		  <h2>Heading 2</h2>
-		  <h3>Heading 3</h3>
-		  <h4>Heading 4</h4>
-		  <h5>Heading 5</h5>
-		  <h6>Heading 6</h6>
-		  <h3>
-			Heading
-			<small class="text-muted">with muted text</small>
-		  </h3>
-		  <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <h2>Example body text</h2>
-		  <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-		  <p><small>This line of text is meant to be treated as fine print.</small></p>
-		  <p>The following is <strong>rendered as bold text</strong>.</p>
-		  <p>The following is <em>rendered as italicized text</em>.</p>
-		  <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <h2>Emphasis classes</h2>
-		  <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-		  <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		  <p class="text-secondary">Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-		  <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-		  <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-		  <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-		  <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-		</div>
-	  </div>
-	</div>
-
-	<!-- Blockquotes -->
-
-	<div class="row">
-	  <div class="col-lg-12">
-		<h2 id="type-blockquotes">Blockquotes</h2>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <figure>
-			<blockquote class="blockquote">
-			  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-
-			</blockquote>
-			<figcaption class="blockquote-footer">
-			  Someone famous in <cite title="Source Title">Source Title</cite>
-			</figcaption>
-		  </figure>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <figure class="text-center">
-			<blockquote class="blockquote">
-			  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-
-			</blockquote>
-			<figcaption class="blockquote-footer">
-			  Someone famous in <cite title="Source Title">Source Title</cite>
-			</figcaption>
-		  </figure>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <figure class="text-end">
-			<blockquote class="blockquote">
-			  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-
-			</blockquote>
-			<figcaption class="blockquote-footer">
-			  Someone famous in <cite title="Source Title">Source Title</cite>
-			</figcaption>
-		  </figure>
-		</div>
-	  </div>
-	</div>
-  </div>
-
-  <!-- Tables
-  ================================================== -->
-  <div class="bs-docs-section">
-	<div class="row">
-	  <div class="col-lg-12">
-		<div class="page-header">
-		  <h1 id="tables">Tables</h1>
-		</div>
-
-		<div class="bs-component">
-		  <table class="table table-hover">
-			<thead>
-			  <tr>
-				<th scope="col">Type</th>
-				<th scope="col">Column heading</th>
-				<th scope="col">Column heading</th>
-				<th scope="col">Column heading</th>
-			  </tr>
-			</thead>
-			<tbody>
-			  <tr class="table-active">
-				<th scope="row">Active</th>
-				<td>Column content</td>
-				<td>Column content</td>
-				<td>Column content</td>
-			  </tr>
-			  <tr>
-				<th scope="row">Default</th>
-				<td>Column content</td>
-				<td>Column content</td>
-				<td>Column content</td>
-			  </tr>
-			  <tr class="table-primary">
-				<th scope="row">Primary</th>
-				<td>Column content</td>
-				<td>Column content</td>
-				<td>Column content</td>
-			  </tr>
-			  <tr class="table-secondary">
-				<th scope="row">Secondary</th>
-				<td>Column content</td>
-				<td>Column content</td>
-				<td>Column content</td>
-			  </tr>
-			  <tr class="table-success">
-				<th scope="row">Success</th>
-				<td>Column content</td>
-				<td>Column content</td>
-				<td>Column content</td>
-			  </tr>
-			  <tr class="table-danger">
-				<th scope="row">Danger</th>
-				<td>Column content</td>
-				<td>Column content</td>
-				<td>Column content</td>
-			  </tr>
-			  <tr class="table-warning">
-				<th scope="row">Warning</th>
-				<td>Column content</td>
-				<td>Column content</td>
-				<td>Column content</td>
-			  </tr>
-			  <tr class="table-info">
-				<th scope="row">Info</th>
-				<td>Column content</td>
-				<td>Column content</td>
-				<td>Column content</td>
-			  </tr>
-			  <tr class="table-light">
-				<th scope="row">Light</th>
-				<td>Column content</td>
-				<td>Column content</td>
-				<td>Column content</td>
-			  </tr>
-			  <tr class="table-dark">
-				<th scope="row">Dark</th>
-				<td>Column content</td>
-				<td>Column content</td>
-				<td>Column content</td>
-			  </tr>
-			</tbody>
-		  </table>
-		</div><!-- /example -->
-	  </div>
-	</div>
-  </div>
-
-  <!-- Forms
-  ================================================== -->
-  <div class="bs-docs-section">
-	<div class="row">
-	  <div class="col-lg-12">
-		<div class="page-header">
-		  <h1 id="forms">Forms</h1>
-		</div>
-	  </div>
-	</div>
-
-	<div class="row">
-	  <div class="col-lg-6">
-		<div class="bs-component">
-		  <form>
-			<fieldset>
-			  <legend>Legend</legend>
-			  <div class="form-group row">
-				<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-				<div class="col-sm-10">
-				  <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
-				</div>
-			  </div>
-			  <div class="form-group">
-				<label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-			  </div>
-			  <div class="form-group">
-				<label for="exampleInputPassword1" class="form-label mt-4">Password</label>
-				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-			  </div>
-			  <div class="form-group">
-				<label for="exampleSelect1" class="form-label mt-4">Example select</label>
-				<select class="form-select" id="exampleSelect1">
-				  <option>1</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			  </div>
-			  <div class="form-group">
-				<label for="exampleSelect2" class="form-label mt-4">Example multiple select</label>
-				<select multiple="" class="form-select" id="exampleSelect2">
-				  <option>1</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			  </div>
-			  <div class="form-group">
-				<label for="exampleTextarea" class="form-label mt-4">Example textarea</label>
-				<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-			  </div>
-			  <div class="form-group">
-				<label for="formFile" class="form-label mt-4">Default file input example</label>
-				<input class="form-control" type="file" id="formFile">
-			  </div>
-			  <fieldset class="form-group">
-				<legend class="mt-4">Radio buttons</legend>
-				<div class="form-check">
-				  <label class="form-check-label">
-					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-					Option one is this and that—be sure to include why it's great
-				  </label>
-				</div>
-				<div class="form-check">
-				  <label class="form-check-label">
-					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-					Option two can be something else and selecting it will deselect option one
-				  </label>
-				</div>
-				<div class="form-check disabled">
-				  <label class="form-check-label">
-					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
-					Option three is disabled
-				  </label>
-				</div>
-			  </fieldset>
-			  <fieldset class="form-group">
-				<legend class="mt-4">Checkboxes</legend>
-				<div class="form-check">
-				  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-				  <label class="form-check-label" for="flexCheckDefault">
-					Default checkbox
-				  </label>
-				</div>
-				<div class="form-check">
-				  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-				  <label class="form-check-label" for="flexCheckChecked">
-					Checked checkbox
-				  </label>
-				</div>
-			  </fieldset>
-			  <fieldset>
-				<legend class="mt-4">Switches</legend>
-				<div class="form-check form-switch">
-				  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-				  <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-				</div>
-				<div class="form-check form-switch">
-				  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
-				  <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-				</div>
-			  </fieldset>
-			  <fieldset class="form-group">
-				<legend class="mt-4">Ranges</legend>
-				  <label for="customRange1" class="form-label">Example range</label>
-				  <input type="range" class="form-range" id="customRange1">
-				  <label for="disabledRange" class="form-label">Disabled range</label>
-				  <input type="range" class="form-range" id="disabledRange" disabled="">
-				  <label for="customRange3" class="form-label">Example range</label>
-				  <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
-			  </fieldset>
-			  <button type="submit" class="btn btn-primary">Submit</button>
-			</fieldset>
-		  </form>
-		</div>
-	  </div>
-	  <div class="col-lg-4 offset-lg-1">
-		<form class="bs-component">
-		  <div class="form-group">
-			<fieldset disabled="">
-			  <label class="form-label" for="disabledInput">Disabled input</label>
-			  <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
-			</fieldset>
-		  </div>
-
-		  <div class="form-group">
-			<fieldset>
-			  <label class="form-label mt-4" for="readOnlyInput">Readonly input</label>
-			  <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..." readonly="">
-			</fieldset>
-		  </div>
-
-		  <div class="form-group has-success">
-			<label class="form-label mt-4" for="inputValid">Valid input</label>
-			<input type="text" value="correct value" class="form-control is-valid" id="inputValid">
-			<div class="valid-feedback">Success! You've done it.</div>
-		  </div>
-
-		  <div class="form-group has-danger">
-			<label class="form-label mt-4" for="inputInvalid">Invalid input</label>
-			<input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
-			<div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
-		  </div>
-
-		  <div class="form-group">
-			<label class="col-form-label col-form-label-lg mt-4" for="inputLarge">Large input</label>
-			<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge">
-		  </div>
-
-		  <div class="form-group">
-			<label class="col-form-label mt-4" for="inputDefault">Default input</label>
-			<input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-		  </div>
-
-		  <div class="form-group">
-			<label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Small input</label>
-			<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="inputSmall">
-		  </div>
-
-		  <div class="form-group">
-			<label class="form-label mt-4">Input addons</label>
-			<div class="form-group">
-			  <div class="input-group mb-3">
-				<span class="input-group-text">$</span>
-				<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-				<span class="input-group-text">.00</span>
-			  </div>
-			  <div class="input-group mb-3">
-				<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-				<button class="btn btn-primary" type="button" id="button-addon2">Button</button>
-			  </div>
-			</div>
-		  </div>
-
-		  <div class="form-group">
-			<label class="form-label mt-4">Floating labels</label>
-			<div class="form-floating mb-3">
-			  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-			  <label for="floatingInput">Email address</label>
-			</div>
-			<div class="form-floating">
-			  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-			  <label for="floatingPassword">Password</label>
-			</div>
-		  </div>
-		</form>
-
-	  </div>
-	</div>
-  </div>
-
-  <!-- Navs
-  ================================================== -->
-  <div class="bs-docs-section">
-	<div class="row">
-	  <div class="col-lg-12">
-		<div class="page-header">
-		  <h1 id="navs">Navs</h1>
-		</div>
-	  </div>
-	</div>
-
-	<div class="row mb-5">
-	  <div class="col-lg-6">
-		<h2 id="nav-tabs">Tabs</h2>
-		<div class="bs-component">
-		  <ul class="nav nav-tabs">
-			<li class="nav-item">
-			  <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" data-bs-toggle="tab" href="#profile">Profile</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link disabled" href="#">Disabled</a>
-			</li>
-			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-			  <div class="dropdown-menu">
-				<a class="dropdown-item" href="#">Action</a>
-				<a class="dropdown-item" href="#">Another action</a>
-				<a class="dropdown-item" href="#">Something else here</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">Separated link</a>
-			  </div>
-			</li>
-		  </ul>
-		  <div id="myTabContent" class="tab-content">
-			<div class="tab-pane fade show active" id="home">
-			  <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-			</div>
-			<div class="tab-pane fade" id="profile">
-			  <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-			</div>
-			<div class="tab-pane fade" id="dropdown1">
-			  <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
-			</div>
-			<div class="tab-pane fade" id="dropdown2">
-			  <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
-			</div>
-		  </div>
-		</div>
-	  </div>
-
-	  <div class="col-lg-6">
-		<h2 id="nav-pills">Pills</h2>
-		<div class="bs-component">
-		  <ul class="nav nav-pills">
-			<li class="nav-item">
-			  <a class="nav-link active" href="#">Active</a>
-			</li>
-			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-			  <div class="dropdown-menu">
-				<a class="dropdown-item" href="#">Action</a>
-				<a class="dropdown-item" href="#">Another action</a>
-				<a class="dropdown-item" href="#">Something else here</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">Separated link</a>
-			  </div>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Link</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link disabled" href="#">Disabled</a>
-			</li>
-		  </ul>
-		</div>
-		<br>
-		<div class="bs-component">
-		  <ul class="nav nav-pills flex-column">
-			<li class="nav-item">
-			  <a class="nav-link active" href="#">Active</a>
-			</li>
-			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-			  <div class="dropdown-menu">
-				<a class="dropdown-item" href="#">Action</a>
-				<a class="dropdown-item" href="#">Another action</a>
-				<a class="dropdown-item" href="#">Something else here</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">Separated link</a>
-			  </div>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Link</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link disabled" href="#">Disabled</a>
-			</li>
-		  </ul>
-		</div>
-	  </div>
-	</div>
-
-	<div class="row">
-	  <div class="col-lg-6">
-		<h2 id="nav-breadcrumbs">Breadcrumbs</h2>
-		<div class="bs-component">
-		  <ol class="breadcrumb">
-			<li class="breadcrumb-item active">Home</li>
-		  </ol>
-		  <ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="#">Home</a></li>
-			<li class="breadcrumb-item active">Library</li>
-		  </ol>
-		  <ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="#">Home</a></li>
-			<li class="breadcrumb-item"><a href="#">Library</a></li>
-			<li class="breadcrumb-item active">Data</li>
-		  </ol>
-		</div>
-	  </div>
-
-	  <div class="col-lg-6">
-		<h2 id="pagination">Pagination</h2>
-		<div class="bs-component">
-		  <div>
-			<ul class="pagination">
-			  <li class="page-item disabled">
-				<a class="page-link" href="#">«</a>
-			  </li>
-			  <li class="page-item active">
-				<a class="page-link" href="#">1</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">2</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">3</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">4</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">5</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">»</a>
-			  </li>
-			</ul>
-		  </div>
-
-		  <div>
-			<ul class="pagination pagination-lg">
-			  <li class="page-item disabled">
-				<a class="page-link" href="#">«</a>
-			  </li>
-			  <li class="page-item active">
-				<a class="page-link" href="#">1</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">2</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">3</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">4</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">5</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">»</a>
-			  </li>
-			</ul>
-		  </div>
-
-		  <div>
-			<ul class="pagination pagination-sm">
-			  <li class="page-item disabled">
-				<a class="page-link" href="#">«</a>
-			  </li>
-			  <li class="page-item active">
-				<a class="page-link" href="#">1</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">2</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">3</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">4</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">5</a>
-			  </li>
-			  <li class="page-item">
-				<a class="page-link" href="#">»</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </div>
-	</div>
-  </div>
-
-  <!-- Indicators
-  ================================================== -->
-  <div class="bs-docs-section">
-	<div class="row">
-	  <div class="col-lg-12">
-		<div class="page-header">
-		  <h1 id="indicators">Indicators</h1>
-		</div>
-	  </div>
-	</div>
-
-	<div class="row">
-	  <div class="col-lg-12">
-		<h2>Alerts</h2>
-		<div class="bs-component">
-		  <div class="alert alert-dismissible alert-warning">
-			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-			<h4 class="alert-heading">Warning!</h4>
-			<p class="mb-0">Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
-		  </div>
-		</div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="alert alert-dismissible alert-danger">
-			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-			<strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
-		  </div>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="alert alert-dismissible alert-success">
-			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-			<strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
-		  </div>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="alert alert-dismissible alert-info">
-			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-			<strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
-		  </div>
-		</div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="alert alert-dismissible alert-primary">
-			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-			<strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
-		  </div>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="alert alert-dismissible alert-secondary">
-			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-			<strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
-		  </div>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="alert alert-dismissible alert-light">
-			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-			<strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
-		  </div>
-		</div>
-	  </div>
-	</div>
-	<div>
-	  <h2>Badges</h2>
-	  <div class="bs-component mb-4">
-		<span class="badge bg-primary">Primary</span>
-		<span class="badge bg-secondary">Secondary</span>
-		<span class="badge bg-success">Success</span>
-		<span class="badge bg-danger">Danger</span>
-		<span class="badge bg-warning">Warning</span>
-		<span class="badge bg-info">Info</span>
-		<span class="badge bg-light">Light</span>
-		<span class="badge bg-dark">Dark</span>
-	  </div>
-	  <div class="bs-component">
-		<span class="badge rounded-pill bg-primary">Primary</span>
-		<span class="badge rounded-pill bg-secondary">Secondary</span>
-		<span class="badge rounded-pill bg-success">Success</span>
-		<span class="badge rounded-pill bg-danger">Danger</span>
-		<span class="badge rounded-pill bg-warning">Warning</span>
-		<span class="badge rounded-pill bg-info">Info</span>
-		<span class="badge rounded-pill bg-light">Light</span>
-		<span class="badge rounded-pill bg-dark">Dark</span>
-	  </div>
-	</div>
-  </div>
-
-  <!-- Progress
-  ================================================== -->
-  <div class="bs-docs-section">
-	<div class="row">
-	  <div class="col-lg-12">
-		<div class="page-header">
-		  <h1 id="progress">Progress</h1>
-		</div>
-
-		<h3 id="progress-basic">Basic</h3>
-		<div class="bs-component">
-		  <div class="progress">
-			<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		</div>
-
-		<h3 id="progress-alternatives">Contextual alternatives</h3>
-		<div class="bs-component">
-		  <div class="progress">
-			<div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		  <div class="progress">
-			<div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		  <div class="progress">
-			<div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		  <div class="progress">
-			<div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		</div>
-
-		<h3 id="progress-multiple">Multiple bars</h3>
-		<div class="bs-component">
-		  <div class="progress">
-			<div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-			<div class="progress-bar bg-success" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-			<div class="progress-bar bg-info" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		</div>
-
-		<h3 id="progress-striped">Striped</h3>
-		<div class="bs-component">
-		  <div class="progress">
-			<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		  <div class="progress">
-			<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		  <div class="progress">
-			<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		  <div class="progress">
-			<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		  <div class="progress">
-			<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-		  </div>
-		</div>
-
-		<h3 id="progress-animated">Animated</h3>
-		<div class="bs-component">
-		  <div class="progress">
-			<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-  </div>
-
-  <!-- Containers
-  ================================================== -->
-  <div class="bs-docs-section">
-	<div class="row">
-	  <div class="col-lg-12">
-		<div class="page-header">
-		  <h1 id="containers">Containers</h1>
-		</div>
-	  </div>
-	</div>
-
-	<div class="row">
-	  <div class="col-lg-12">
-		<h2>List groups</h2>
-	  </div>
-	</div>
-
-	<div class="row">
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <ul class="list-group">
-			<li class="list-group-item d-flex justify-content-between align-items-center">
-			  Cras justo odio
-			  <span class="badge bg-primary rounded-pill">14</span>
-			</li>
-			<li class="list-group-item d-flex justify-content-between align-items-center">
-			  Dapibus ac facilisis in
-			  <span class="badge bg-primary rounded-pill">2</span>
-			</li>
-			<li class="list-group-item d-flex justify-content-between align-items-center">
-			  Morbi leo risus
-			  <span class="badge bg-primary rounded-pill">1</span>
-			</li>
-		  </ul>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="list-group">
-			<a href="#" class="list-group-item list-group-item-action active">Cras justo odio</a>
-			<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-			<a href="#" class="list-group-item list-group-item-action disabled">Morbi leo risus</a>
-		  </div>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="list-group">
-			<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-			  <div class="d-flex w-100 justify-content-between">
-				<h5 class="mb-1">List group item heading</h5>
-				<small>3 days ago</small>
-			  </div>
-			  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-			  <small>Donec id elit non mi porta.</small>
-			</a>
-			<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-			  <div class="d-flex w-100 justify-content-between">
-				<h5 class="mb-1">List group item heading</h5>
-				<small class="text-muted">3 days ago</small>
-			  </div>
-			  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-			  <small class="text-muted">Donec id elit non mi porta.</small>
-			</a>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-	<div class="row">
-	  <div class="col-lg-12">
-		<h2>Cards</h2>
-	  </div>
-	</div>
-
-	<div class="row">
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Primary card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Secondary card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Success card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Danger card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Warning card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Info card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card bg-light mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Light card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Dark card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="card border-primary mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Primary card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card border-secondary mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Secondary card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card border-success mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Success card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card border-danger mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Danger card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card border-warning mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Warning card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card border-info mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Info card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card border-light mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Light card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		  <div class="card border-dark mb-3" style="max-width: 20rem;">
-			<div class="card-header">Header</div>
-			<div class="card-body">
-			  <h4 class="card-title">Dark card title</h4>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		  </div>
-		</div>
-	  </div>
-
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="card mb-3">
-			<h3 class="card-header">Card header</h3>
-			<div class="card-body">
-			  <h5 class="card-title">Special title treatment</h5>
-			  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-			</div>
-			<svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
-			  <rect width="100%" height="100%" fill="#868e96"></rect>
-			  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-			</svg>
-			<div class="card-body">
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-			<ul class="list-group list-group-flush">
-			  <li class="list-group-item">Cras justo odio</li>
-			  <li class="list-group-item">Dapibus ac facilisis in</li>
-			  <li class="list-group-item">Vestibulum at eros</li>
-			</ul>
-			<div class="card-body">
-			  <a href="#" class="card-link">Card link</a>
-			  <a href="#" class="card-link">Another link</a>
-			</div>
-			<div class="card-footer text-muted">
-			  2 days ago
-			</div>
-		  </div>
-		  <div class="card">
-			<div class="card-body">
-			  <h4 class="card-title">Card title</h4>
-			  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			  <a href="#" class="card-link">Card link</a>
-			  <a href="#" class="card-link">Another link</a>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-	<div class="row mt-5">
-	  <div class="col-lg-12">
-		<h2>Accordions</h2>
-	  </div>
-	</div>
-
-	<div class="row">
-	  <div class="col-lg-4">
-		<div class="bs-component">
-		  <div class="accordion" id="accordionExample">
-			<div class="accordion-item">
-			  <h2 class="accordion-header" id="headingOne">
-				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				  Accordion Item #1
-				</button>
-			  </h2>
-			  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-				<div class="accordion-body">
-				  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-				</div>
-			  </div>
-			</div>
-			<div class="accordion-item">
-			  <h2 class="accordion-header" id="headingTwo">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				  Accordion Item #2
-				</button>
-			  </h2>
-			  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-				<div class="accordion-body">
-				  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-				</div>
-			  </div>
-			</div>
-			<div class="accordion-item">
-			  <h2 class="accordion-header" id="headingThree">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				  Accordion Item #3
-				</button>
-			  </h2>
-			  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-				<div class="accordion-body">
-				  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-  </div>
-
-  <!-- Dialogs
-  ================================================== -->
-  <div class="bs-docs-section">
-	<div class="row">
-	  <div class="col-lg-12">
-		<div class="page-header">
-		  <h1 id="dialogs">Dialogs</h1>
-		</div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="col-lg-6">
-		<h2>Modals</h2>
-		<div class="bs-component">
-		  <div class="modal">
-			<div class="modal-dialog" role="document">
-			  <div class="modal-content">
-				<div class="modal-header">
-				  <h5 class="modal-title">Modal title</h5>
-				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true"></span>
-				  </button>
-				</div>
-				<div class="modal-body">
-				  <p>Modal body text goes here.</p>
-				</div>
-				<div class="modal-footer">
-				  <button type="button" class="btn btn-primary">Save changes</button>
-				  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	  <div class="col-lg-6">
-		<h2>Popovers</h2>
-		<div class="bs-component mb-5">
-		  <button type="button" class="btn btn-secondary" title="" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="Popover Title">Left</button>
-
-		  <button type="button" class="btn btn-secondary" title="" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="Popover Title">Top</button>
-
-		  <button type="button" class="btn btn-secondary" title="" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="Popover Title">Bottom</button>
-
-		  <button type="button" class="btn btn-secondary" title="" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="Popover Title">Right</button>
-		</div>
-		<h2>Tooltips</h2>
-		<div class="bs-component mb-5" data-html="
-		  <button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;>Left</button>
-
-		  <button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;>Top</button>
-
-		  <button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;>Bottom</button>
-
-		  <button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;>Right</button>
-		<button class=&quot;source-button btn btn-primary btn-xs&quot; role=&quot;button&quot; tabindex=&quot;0&quot;>&amp;lt; &amp;gt;</button>">
-		  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Tooltip on left">Left</button>
-
-		  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Tooltip on top">Top</button>
-
-		  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Tooltip on bottom">Bottom</button>
-
-		  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Tooltip on right">Right</button>
-		</div>
-		<h2>Toasts</h2>
-		<div class="bs-component">
-		  <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-			<div class="toast-header">
-			  <strong class="me-auto">Bootstrap</strong>
-			  <small>11 mins ago</small>
-			  <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close">
-				<span aria-hidden="true"></span>
-			  </button>
-			</div>
-			<div class="toast-body">
-			  Hello, world! This is a toast message.
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-  </div>
-
-  <div id="source-modal" class="modal fade" tabindex="-1">
-	<div class="modal-dialog modal-lg">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h4 class="modal-title">Source Code</h4>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-		</div>
-		<div class="modal-body">
-		  <pre class="language-html"><code></code></pre>
-		</div>
-	  </div>
-	</div>
-  </div>
-
-</div>
-
-    </section>
-    
+                <p>
+                  <a href="/success-stories/ih-tla" class="btn btn-secondary m-0 shadow">Find out more about the project!</a>
+                </p>
+              
+              </div>
 
             </div>
 
-            <aside class="sticky-container d-none">
-                
+          </div>
 
-    <section class="sticky p-3 mb-3">
+        </div>
         
-<div class="heading">
-    <h2 class="d-inline">Recent posts</h2>
-    <a class="sticky-link btn btn-sm btn-outline-primary float-end"><i class="fas fa-link"></i></a>
-</div>
+      </div>
 
+    </section><!-- ET: LANDING -->
+
+    <!-- ST: HINTS-->
+    <section class="hints">
+
+      <div class="container p-0" data-aos="zoom-in-up">
+
+        <div class="content p-3 pt-5 p-lg-0">
+      
+          <div class="row align-items-stretch justify-content-center" data-aos="zoom-in-up">
+            
+            <div class="d-none d-md-block col-md-4">
+              <div class="h-100 w-100 using-data-jarallax" data-jarallax data-type="scroll" data-speed="1.4" data-img-position="42.5% 50%">
+                <img class="img-fluid jarallax-img" src="/assets/bg/team/pexels-andrea-piacquadio-3790808.jpg">            
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="p-3 px-lg-3 pt-lg-5">
+
+                <div class="text-center">
+
+                  <p class="fs-4 mb-0">
+                    We Believe that <span class="text-nowrap">IT &amp; Software Projects</span> <span class="text-nowrap">can be Done Right!</span>
+                  </p>
+
+                  <hr/>
+
+                  <p>
+                    <span class="text-uppercase">We are on a Mission to Make This Happen!</span>
+                    <br/>
+                    <span>Our clients trust us to deliver great results - We're here to help them succeed.</span>
+                  </p>      
+
+                  <p>
+                    <span class="text-highlight">Consultation &amp; Software Development</span> with <span class="text-highlight">On-hand Technical Leadership</span> for <span class="text-highlight">SME</span>s.
+                  </p>
+
+                  <p class="text-center">
+                    <a href="#case-studies" class="d-block d-md-inline-flex btn btn-sm btn-secondary">Case studies...</a>
+                    <a href="#who-what" class="d-block d-md-inline-flex btn btn-sm btn-secondary">Who We Are...</a>
+                    <a href="/projects" class="d-block d-md-inline-flex btn btn-sm btn-secondary">Project showcase...</a>
+                  </p>   
+
+                </div>
+
+                <hr />
+
+                <div class="small">
+                  <p>
+                    We are Partners of
+                    <span class="position-relative text-nowrap">
+                      <img src="/assets/simplyput logo.png" class="partner-simplyput px-2" style="height: 1.5em; vertical-align: bottom;" alt="SimplyPut Consulting Logo">
+                      <a class="stretched-link" href="https://www.simplyput.com"></a>
+                    </span> in the Field of Custom Enterprise Software Development & Team Management.
+
+                    <span class="small text-muted">
+                      SimplyPut Consulting is a no-nonsense management consulting firm comprised of specialists who have a passion for getting sh*t done. They serve Private Equity and C-Suite leaders around the world to deliver on their most challenging business and technology remediations, transitions, and transformations.
+                    </span>
+                  </p>  
+                </div>
         
-<ul class="recent-posts">
-    
-    <li>
-        <a href="/post/enable-google-page-views/">
-            <span>Enable Google Page Views</span>
-        </a>
-    </li>
-    
-    <li>
-        <a href="/post/customize-the-favicon/">
-            <span>Customize the Favicon</span>
-        </a>
-    </li>
-    
-    <li>
-        <a href="/post/getting-started/">
-            <span>Getting Started</span>
-        </a>
-    </li>
-    
-    <li>
-        <a href="/post/writing-a-new-post/">
-            <span>Writing a New Post</span>
-        </a>
-    </li>
-    
-    <li>
-        <a href="/post/text-and-typography/">
-            <span>Text and Typography</span>
-        </a>
-    </li>
-    
-</ul>
-    </section>
+              </div>
+            </div>
 
-    <section class="sticky p-3 mb-3 d-hide-if-empty">
-        
-<div class="heading">
-    <h2 class="d-inline">Tag cloud</h2>
-    <a class="sticky-link btn btn-sm btn-outline-primary float-end"><i class="fas fa-link"></i></a>
-</div>
-
-         
-    <span style="font-size: 1.05em;">
-        <a href="/tag/blog/1/">blog</a>
-    </span>
- 
-    <span style="font-size: 1.1125em;">
-        <a href="/tag/ddd/1/">ddd</a>
-    </span>
- 
-    <span style="font-size: 0.8625em;">
-        <a href="/tag/dont/1/">dont</a>
-    </span>
- 
-    <span style="font-size: 0.8em;">
-        <a href="/tag/favicon/1/">favicon</a>
-    </span>
- 
-    <span style="font-size: 0.8em;">
-        <a href="/tag/getting-started/1/">getting started</a>
-    </span>
- 
-    <span style="font-size: 0.8em;">
-        <a href="/tag/google-analytics/1/">google analytics</a>
-    </span>
- 
-    <span style="font-size: 1.1125em;">
-        <a href="/tag/intro/1/">intro</a>
-    </span>
- 
-    <span style="font-size: 1.05em;">
-        <a href="/tag/jekyll/1/">jekyll</a>
-    </span>
- 
-    <span style="font-size: 0.925em;">
-        <a href="/tag/management/1/">management</a>
-    </span>
- 
-    <span style="font-size: 0.8em;">
-        <a href="/tag/outer-middle-inner/1/">outer - middle - inner</a>
-    </span>
- 
-    <span style="font-size: 0.8em;">
-        <a href="/tag/pageviews/1/">pageviews</a>
-    </span>
- 
-    <span style="font-size: 1.8em;">
-        <a href="/tag/posts/1/">posts</a>
-    </span>
- 
-    <span style="font-size: 1.05em;">
-        <a href="/tag/samples/1/">samples</a>
-    </span>
- 
-    <span style="font-size: 0.925em;">
-        <a href="/tag/samples-11ty-customized/1/">samples, 11ty-customized</a>
-    </span>
- 
-    <span style="font-size: 1.1125em;">
-        <a href="/tag/series/1/">series</a>
-    </span>
- 
-    <span style="font-size: 1.3em;">
-        <a href="/tag/technical/1/">technical</a>
-    </span>
- 
-    <span style="font-size: 0.8em;">
-        <a href="/tag/typography/1/">typography</a>
-    </span>
- 
-    <span style="font-size: 0.8em;">
-        <a href="/tag/writing/1/">writing</a>
-    </span>
-
-
-    </section>
-    
-
-            </aside>
+          </div>
 
         </div>
 
-        <div id="search-results-container" class="row pt-3 d-none">
-            <div class="search-results col-12">
+      </div>
+
+    </section><!-- ET: HINTS -->
+
+  </div><!-- LANDING + HINT -->
+
+  <!-- ST: TRIVIA -->
+  <section class="trivia" id="trivia">
+
+    <div class="container p-sm-0 my-3 my-lg-5">
+
+      <div class="p-3 pt-4 bg-white shadow border">
+        
+        <div class="row g-5 align-items-top justify-content-center">
+          
+          <div class="col-md no-align-self-center text-highlight">
+            <div class="fs-1 text-center"><i class="fa-regular fa-circle-question"></i></div>
+            <div class="text-center text-nowrap fs-5 fw-bold">Did you know?</div>
+          </div>
+
+          <div class="col-md">
+            <figure class="m-0" >
+              <blockquote class="blockquote quote">
+                As software becomes more complex and critical, it is important to have at least one <span class="fw-bold text-nowrap">Stage-5</span> candidate on the team <span class="fw-bold">from the very start - at any cost</span>!
+              </blockquote>
+              <figcaption class="mb-0 blockquote-footer">
+                <a href="https://www.amazon.com/s?k=Meilir-Page-Jones">Meilir Page-Jones</a> in <a href="https://archive.ph/OErpt"><cite>The Seven Stages of Expertise in Software Engineering</cite></a>
+              </figcaption>
+            </figure>         
+          </div>
+
+          <div class="col-md">
+            An <a href="https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf">analysis of 50K software projects</a> conducted by The Standish Group in 2015 found that 
+            <span class="fw-bold text-highlight"><span class="purecounter data-purecounter-start="0" data-purecounter-end="71" data-purecounter-duration=".5" data-purecounter-formater="en-US">0%</span>%</span>
+            of projects were either <span class="fw-bold">failures or challenged to meet expectations</span>. The same study in upcoming years revealed the same or even worse data! 
+          </div>
+
+          <div class="col-md">
+            Many companies, even software agencies have <span class="fw-bold">leadership and management</span> that is <span class="fw-bold">not very technical</span>. This can lead to costly projects, which are often doomed from the start.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- ET: TRIVIA -->
+
+  <!-- ET: WHO-WHAT-SERVICES -->
+  <section class="jarallax who-what-services" id="who-what-services">
+
+    <div class="overlay"></div>
+
+    <img class="jarallax-img" src="/assets/bg/office/unsplash-domenico-loia-hGV2TfOh0ns.jpg">    
+
+    <!-- ST: WHO-WHAT -->
+    <section class="who-what top-delimiter" id="who-what">
+    
+      <div class="container p-0" data-aos="slide-left">
+
+        <div class="px-5 shadow border text-dark bg-white">
+
+          <h1>Who we are</h1>
+          <hr/>
+
+          <div>
+
+            <p>
+              <span class="fs-5 text-highlight fw-bold">We believe that software projects can be done right!</span>
+              <br/>
+              We are on a mission to make this happen!
+            </p>
+
+            <p>
+              <span class="fs-5 text-uppercase">We're different!</span>
+              
+              We adhere to established, <span class="text-highlight">simple</span>-to-comprehend <span class="text-highlight">principles</span> - created by far smarter people than us.
+              We have been doing the same thing every day for the last 20 years, and <span class="text-highlight">we know what works</span>...
+              
+              <span class="fs-5 text-uppercase">That is why we excel.</span>
+            </p>
+
+            <hr/>
+
+            <div class="row gy-3 p-3">
+
+              <div class="col-md-6">
+                <div class="text-center fs-4 fw-bold">
+                  <div>&gt; <span class="purecounter data-purecounter-start="0" data-purecounter-end="38400" data-purecounter-duration="2" data-purecounter-formater="en-US"></span></div>
+                  <div><i class="fa-solid fa-stopwatch"></i></div>
+                  <div class="fs-5">Project Hours</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="text-center fs-4 fw-bold">
+                  <div>&gt; <span class="purecounter data-purecounter-start="0" data-purecounter-end="38" data-purecounter-duration="1" data-purecounter-formater="en-US"></span></div>
+                  <div><i class="fa-solid fa-building-shield"></i></div>
+                  <div class="fs-5">Completed Projects</div>
+                </div>
+              </div>
+
             </div>
+
+            <hr/>
+
+            <p>
+              Our team has a proven track record of solving software and business problems.
+              <span>We help our clients define, manage, develop, and deploy high-quality software that meets their business needs.</span>
+            </p>
+            
+            <p class="fs-5 text-highlight">
+              Would you like us to help you with your next IT project or to recover (save) the current one?
+              <span class="fw-bold">See how we can Help You!</span>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- ET: WHO-WHAT -->
+
+    <!-- ST: SERVICES -->
+    <section class="services" id="services">
+
+      <div class="container p-0 pb-5">
+
+        <div class="primo px-5 text-light">
+
+          <h1>Our Services</h1>
+          <hr/>
+
+          <p class="fs-4">
+            <span class="text-highlight">You’re UNIQUE!</span>
+            Thus the decision to go with a FAANG approach at your company might not work out!
+          </p>
+
+          <p>
+            We <span class="text-highlight">follow and adjust</span> a set of <span class="text-highlight">simple guidelines</span> in order to <span class="text-highlight">address your SPECIFIC situation</span>:
+            <ul>
+              <li>Simple is always BETTER!</li>
+              <li>No nonsense and buzzword recommendations!</li>
+              <li>Start small and scale (see: <a href=" https://martinfowler.com/bliki/MonolithFirst.html">Martin Fowler's article on "Microservices"</a>)!</li>
+              <li>No huge upfront design! Just enough to avoid quality problems, rather than mitigating them!</li>
+              <li>Visible outputs within months!</li>
+            </ul>
+          </p>
+
+          <p class="fs-4 text-highlight">
+            Simple and Manageable Solutions...that Works for You!
+          </p>
+          
+        </div>
+
+        <div class="secundo p-3 p-lg-0 mt-5" data-aos="slide-up">
+
+          <div class="row gy-3 align-items-stretch">
+
+            <div class="col-lg">
+              <div class="text-dark bg-light h-100 p-3 px-lg-4 border shadow d-flex flex-column">
+                <h5 class="text-center text-uppercase"><i class="fa-solid fa-user-tie"></i><span class="ps-2">Consulting</span></h5>
+                <hr/>
+                <ul class="flex-grow-0">
+                  <li>Software &amp; Technology Selection  (requirement gathering, RFP, architecture, estimates, planning)</li>
+                  <li>Software Team Setup &amp; Hiring</li>
+                  <li>Software Architecture &amp; Development</li>
+                </ul>
+                <h6 class="text-center text-uppercase text-muted">Because it might be a good idea to get a <span class="fw-bold">second opinion</span>.</h6>
+              </div>
+            </div>
+
+            <div class="col-lg">
+              <div class="text-dark bg-light h-100 p-3 px-lg-4 border shadow d-flex flex-column">
+                <h5 class="text-center text-uppercase"><i class="fa-solid fa-computer"></i><span class="ps-2">Enterprise Software Development</span></h5>
+                <hr/>
+                <ul class="flex-grow-0">
+                  <li class="skip-fw-bold skip-text-highlight">On-Hand Technical Leadership for .NET &amp; Angular</li>
+                  <li class="skip-fw-bold skip-text-highlight">Project Rescue</li>
+                  <li>Enterprise Software Development</li>
+                  <li>Mentorship</li>
+                </ul>
+                <h6 class="text-center text-uppercase text-muted">
+                  <span class="fw-bold">Beware:</span> having a <span class="fw-bold">Stage 6 Lead</span> on your team can lead to <span class="fw-bold">more quality, less issues</span>, and non-slowing development.
+                  <span class="fw-bold">Wanna risk it?!</span>
+                </h6>
+              </div>
+            </div>
+
+            <div class="col-lg">
+              <div class="text-dark bg-light h-100 p-3 px-lg-4 border shadow d-flex flex-column">
+                <h5 class="text-center text-uppercase"><i class="fa-solid fa-marker"></i><span class="ps-2">Quick Audit</span></h5>
+                <hr/>
+                <ul class="flex-grow-0">
+                  <li>Finding bottlenecks</li>
+                  <li>Suggesting solutions</li>
+                  <li>Increasing productivity</li>
+                </ul>
+                <h6 class="text-center text-uppercase text-muted">
+                  <span class="fw-bold">Learn what’s broken!</span>
+                  <br/>
+                  As for non-technical managers, some performance and quality related issues may sometimes be <span class="fw-bold">difficult to identify</span>.
+                </h6>
+              </div>
+            </div>
+
+            <!--
+            <div class="col-lg">
+              <div class="text-dark bg-light h-100 p-3 px-lg-4 border shadow d-flex flex-column">
+                <h5 class="text-center text-uppercase"><i class="fa-solid fa-bag-shopping"></i><span class="ps-2">Items For Growth</span></h5>
+                <hr/>
+                <ul class="flex-grow-0">
+                  <li>Job-description 101 Cheat Sheet</li>
+                  <li>The Effective Software Developer 101 - Training Material</li>
+                </ul>
+                <h6 class="text-center text-uppercase text-muted">
+                  <span class="fw-bold">Focus on what really matters!</span>
+                  <br/>
+                  Try not to let your team waste energy on things that won't help it progress.
+                </h6>
+              </div>
+            </div>        
+            -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- ET: SERVICES -->
+
+  </div><!-- ET: WHO-WHAT-SERVICES -->
+  
+  <!-- ST: 7STAGES -->
+  <section class="d-none 7stages top-delimiter" id="7stages">
+    
+    <div class="container p-sm-0 my-3 my-lg-5">
+
+      <div class="p-3 px-5 bg-light small shadow border">
+
+        <p class="text-center fs-5">The Seven Stages of Expertise in Software Engineering - Simplified beyond!</p>
+
+        <div class="row gy-3 align-items-top justify-content-center">
+          
+          <div class="col-12 col-md-3">
+            <p class="text-center">
+                Stage
+                <span class="fa-stack">
+                  <i class="fa-regular fa-circle fa-stack-2x"></i>            
+                  <i class="fa-regular fa-4 fa-stack-1x"></i>
+                </span>
+            </p>
+            <p>
+              <span class="fw-bold">Junior Developers</span> with experience or <span class="fw-bold">Mid-level Developers</span>
+              are a great asset to any company, but without a mentor and/or an on-hand technical lead their mistakes (losing focus, missing deadlines) <span class="fw-bold">might cost the company a lot of money</span>.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <p class="text-center">
+              Stage
+              <span class="fa-stack">
+                <i class="fa-regular fa-circle fa-stack-2x"></i>            
+                <i class="fa-regular fa-5 fa-stack-1x"></i>
+              </span>
+            </p>
+            <p>
+              <span class="fw-bold">Senior Developers</span>
+              are the backbone of any company. They're independent contributors. With a broad skill-set given, <span class="fw-bold">the experienced ones should be able to create a working and stable system from scratch</span>.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <p class="text-center">
+              Stage
+              <span class="fa-stack">
+                <i class="fa-regular fa-circle fa-stack-2x"></i>            
+                <i class="fa-regular fa-6 fa-stack-1x"></i>
+              </span>
+            </p>
+            <p>
+              <span class="fw-bold">Architect / Technical Lead / Team Lead</span>
+              ..."adept technician, but also possesses a profound methodological foundation"...
+              <span class="fw-bold">They're the key figures for starting integration, low-latency and/or high-scalable projects.</span>
+              They help you to set up a working development team, including necessary business processes.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <p class="text-center">
+              Stage
+              <span class="fa-stack">
+                <i class="fa-regular fa-circle fa-stack-2x"></i>            
+                <i class="fa-regular fa-7 fa-stack-1x"></i>
+              </span>
+            </p>
+            <p>
+              <span class="fw-bold">Conference Speakers, Authors, Researchers</span>
+              ...community-wide pioneers. 
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- ET: 7STAGES -->
+
+  <!-- ST: CASE STUDIES -->
+  <section class="case-studies top-delimiter bg-light" id="case-studies" data-jarallax data-speed="1" data-img-position="50% 80%">
+    
+    <!--
+    <img class="jarallax-img" src="/assets/bg/office/unsplash-benjamin-child-GWe0dlVD9e0.jpg">
+    <img class="jarallax-img" src="/assets/bg/office/pexels-proxyclick-visitor-management-system-2451566.jpg">
+    -->
+    <img class="jarallax-img" src="/assets/bg/office/unsplash-benjamin-child-GWe0dlVD9e0.jpg">
+
+    <div class="container p-sm-0 py-3 py-lg-5" data-aos="slide-left">
+      
+      <div>
+
+        <div class="heading shadow p-3">
+          <h1>Case Studies</h1>
+        </div>
+
+        <div class="accordion accordion-flush">
+
+          <div class="accordion-item shadow">
+            <h2 class="accordion-header">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#case_study_ih_tl" onclick="fixAOS()">
+                <span class="fs-5">Covid Testing and Vaccination Company</span>
+              </button>
+            </h2>
+            <div id="case_study_ih_tl" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>
+                  <span class="fw-bold">Saved</span> an internal software project of a <span class="text-highlight">$150 Million Covid Testing and Vaccination company</span> <a class="company-ih" href="https://www.impacthealth.com/">[ Impact Health ]</a> from failing in 2022.
+                  The same project was then rebranded and sold to another healthcare provider <a class="company-wcusa" href="https://wellnesscoachesusa.com/">[ Wellness Coaches USA ]</a>.
+                  Despite its complexity (external data, 3rd party synchronisation, SSO, mobile device support) <span class="fw-bold">the project is still in use, it requires minimal technical attention</span> and is working without technical intervention for months.
+                  <a href="/www/success-stories/ih-tla">Link to the detailed success story</a>
+                </p>
+                <ol class="list-group list-group-flush list-group-numbered">
+                  <li class="list-group-item">We've made some <span class="fw-bold">changes</span> to the software development related <span class="fw-bold">business &amp; technological processes</span>, as well as to the tooling to <span class="fw-bold">manage the team more effectively</span>.</li>
+                  <li class="list-group-item">We simplified the UI for <span class="fw-bold">optimal experience</span> on desktop and mobile.</li>
+                  <li class="list-group-item">Introduced technology and implementation to <span class="fw-bold">improve resiliency and performance</span> at 3rd party services integration.</li>
+                  <li class="list-group-item">We've <span class="fw-bold">analyzed the data</span>, drawn up KPIs and reports <span class="fw-bold">to help minimize payroll and staff-related problems</span>.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow">
+            <h2 class="accordion-header">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#case_study_ups" onclick="fixAOS()">
+                <span class="fs-5">Specialty Service Provider for the Energy Industry</span>
+              </button>
+            </h2>
+            <div id="case_study_ups" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>
+                  <span class="text-highlight">Reduced maintenance expenses</span> and minimalized data-discrepancy issues on the company <a class="company-ups" href="https://universalplant.com/">[ Universal Plant Services ]</a> custom hiring applications from a yearly ~$60K to 1/4 with <span class="text-nowrap">ROI: &lt;12 months</span>.
+                  Introduced necessary technologies, tools and processes which lead to more effective development (more things done with less code so less liability), higher data throughput and better end user experience.
+                  <span class="fw-bold">Introduced the necessary technologies, tools, and processes</span> that lead to <span class="fw-bold">more effective development</span> - this includes: more things done with less code so <span class="fw-bold">less liability</span>, higher data throughput, and a <span class="fw-bold">better end user experience</span>.
+                </p>
+                <ol class="list-group list-group-flush list-group-numbered">
+                  <li class="list-group-item">Introduced <span class="fw-bold">new technologies &amp; solutions to speed-up development</span>, authored the reusable component libraries for .NET (NuGet) and Angular (NPM).</li>
+                  <li class="list-group-item">Contributed new ideas to <span class="fw-bold">extend and stabilize</span> the hiring application.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- ET: CASE STUDIES -->
+
+  <!-- ST: CONTACT-US -->
+  <section class="contact-us top-delimiter bg-dark text-light" id="contact-us" data-aos="slide-up">
+    
+    <div class="container p-5">
+
+      <div class="row gy-3 align-items-top justify-content-center">
+
+        <div class="col-md ms-n5">
+          <p><img style="height: 3em;" src="/assets/reflection logo.png" /></p>
+        </div>
+
+        <div class="col-md">
+          <p><span class="text-uppercase">Quick Links</span></p>
+          <ul style="list-style-type: none; padding:0; margin: 0;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#who-what">Who We Are</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="/projects">Projects</a></li>
+          </ul>
+        </div>     
+
+        <div class="col-md">
+          <p><span class="text-uppercase">Let us Help!</span></p>
+          <p>
+
+            <a 
+              href="https://www.linkedin.com/in/hideghety/"
+              class="d-flex align-items-center"
+              >
+              <i class="fa-brands fa-linkedin fa-fw fa-1x fs-5"></i>
+              Message us on Linked In
+            </a>
+            <!--
+            <a 
+              href="https://form.jotform.com/balazshideghety/reflection-contact-form"
+              target="_blank"
+              class="d-flex align-items-center"
+              >
+              <i class="fa-solid fa-file-contract fa-fw fa-1x fs-5"></i>
+              Fill out this form
+            </a>
+            -->
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- ET: CONTACT-US -->
+
+</div>  
+
+                    
+                </div>
+
+                <aside class="sticky-container d-none">
+                    
+                </aside>
+
+            </div>
+
+        </div>
+
+        <div id="search-results-container" class="d-none container">
+
+            <div class="row g-0">
+            
+                <div class="search-results-wrapper col-12 overflow-hidden">
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -1803,7 +982,7 @@ This is the main static WWW page!
 
         _searchingTemplate: `
 <h2>
-    <i class="text-secondary fas fa-spin fa-circle-notch"></i>
+    <i class="fa-solid fa-circle-notch fa-spin text-secondary"></i>
     <span class="text-secondary">Searching for:</span>
     <span class="text-primary"><%= searchText %></span>
 </h2>
@@ -1921,7 +1100,7 @@ This is the main static WWW page!
                 self._showResults ? el.classList.remove("d-none") : el.classList.add("d-none")
                 
                 // find results element and set results
-                const resultsEl = el.querySelector(".search-results");
+                const resultsEl = el.querySelector(".search-results-wrapper");
                 if (resultsEl) {
                     resultsEl.innerHTML = self._showResults ? html : "";
                 }
@@ -2070,7 +1249,7 @@ This is the main static WWW page!
     // NOTE:
     // #search-results-container must have an additional element with a .search-results class
     // these objects (along with #global-content-view) were already set up inside main.njk
-    blogSearch.init('.blog-search-input', '.blog-search-cancel', '#search-results-container', '#global-content-view');
+    blogSearch.init('.blog-search-input', '.blog-search-cancel', '#search-results-container', '.hide-on-search-results-container-display');
 
 </script>
 
@@ -2213,5 +1392,21 @@ This is the main static WWW page!
     <!-- dynamic & custom scripts that need to run after the entire "final" content is rendered -->
     <script src="/assets/js/custom/d-hide-if-empty.js"></script>
     <script src="/assets/js/custom/sticky.js"></script>
+
+    <!-- scripts from content pages -->
+    <script>
+  InitParallax();
+  InitTyped();
+  InitAOS();
+  InitCounters()
+
+  function fixAOS() {
+    setTimeout(() => AOS.refresh(), 250);
+  }
+
+</script>
+
+
+    <script src="/assets/js/custom/menu-path-and-scroll-spy.js"></script>
 
 </html>
