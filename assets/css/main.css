@@ -13972,6 +13972,12 @@ Navbar
 .navbar-main .navbar-brand img {
   max-height: 2em;
 }
+.navbar-main .navbar-brand-subtitle {
+  font-family: var(--font-family-wide);
+  text-transform: none;
+  font-size: 0.5em;
+  line-height: 0.5em;
+}
 .navbar-main .navbar-toggler {
   /*
   @extend .btn-dark;

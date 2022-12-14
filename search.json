@@ -189,7 +189,7 @@
     {
         "url": "/about/",
         "title": "About",
-        "date": "Wed Dec 07 2022 09:48:58 GMT+0000 (Coordinated Universal Time)",
+        "date": "Wed Dec 14 2022 13:37:15 GMT+0000 (Coordinated Universal Time)",
         "author": "",
         "image": "",
         "tags": ["www"],
@@ -198,20 +198,20 @@
         "text": "About!"
     },
     {
-        "url": "/hire/",
+        "url": "/hire-fte/",
         "title": "Hire me!",
-        "date": "Wed Dec 07 2022 09:48:58 GMT+0000 (Coordinated Universal Time)",
+        "date": "Wed Dec 14 2022 13:37:15 GMT+0000 (Coordinated Universal Time)",
         "author": "",
         "image": "",
         "tags": ["www"],
         "categories": [],
-        "summary": "<h1 id=\"technical-lead-%7C-.net-%26-angular\" tabindex=\"-1\">Technical LEAD | .NET &amp; Angular</h1>\n<img class=\"skip-float-end\" style=\"height: 12em;\" src=\"/hire/business card.png\" alt=\"image\" />\n<hr>\n<p>Thank you for reaching out.</p>\n<p><strong>If you checked my <a href=\"https://www.linkedin.com/in/hideghety/\" target=\"_blank\">LinkedIN headline and profile</a></strong>, did a match then it’s without doubt that I am a <strong>suitable</strong> candidate for the position.</p>\n<p>I possess over <strong>20 years of experience</strong> in software <strong>development, architecture and team-leading</strong>, so I’m <strong>interested only in specific roles</strong>.</p>",
-        "text": "Technical LEAD | .NET &amp; Angular\n\nThank you for reaching out.\nIf you checked my LinkedIN headline and profile, did a match then it’s without doubt that I am a suitable candidate for the position.\nI possess over 20 years of experience in software development, architecture and team-leading, so I’m interested only in specific roles.\nBefore getting in touch with me please ensure that:\n\nall my terms and conditions are met,\nthat a comprehensive job description is provided (with all the details on the team, tasks, …)\n…along with an hourly rate for the approved position.\n\nRoles I Consider\n\nOnly on-hands technical- and team-LEAD roles (~20% coding, rest: architecture/BA/PM/lead/mentoring)\nMust be .NET based, Angular is a complementary stack\n100% REMOTE (no hybrid)\nConsidering just EST / CST based teams\nFT (full time ~ 40hrs/week) but only on C2C (I have my own company - do invoicing, all work is conducted by me so: no 3rd parties, there’s no need for work permit nor GC)\n\nIf all above criteria are met and you like my experience and are considering me, feel free to reserve a time for a call (Zoom) [link].\n\nNOTE: I allowed scheduling without a notice time, so if you plan the call within the upcoming 1-4 hrs, plz. make sure to drop a message on LinkedIn (it’s easy to miss if not planned ahead, and I really would not want to waste your time).\n\nPortfolio / Screenshots\n\nMore images...\n\nImage gallery - Application screenshots\n\nImportant Links\n\nThis URL\n\nLinked In\nhttps://www.linkedin.com/in/hideghety/\n\nCV\n[link]\n\nWhat I Do / Services\n[link]\n\nCase Studies\n[link]\n\nSuccess Story\n[link]\n\nProjects\n[link]\n\nconst locationOrigin = window.location.origin;\ndocument.querySelector(\"#this-anchor\").innerText = window.location.href;\ndocument.querySelectorAll(\".anchor-patch\").forEach(a => a.innerText = a.href);"
+        "summary": "<h1 id=\"technical-lead-%26-architect-%7C-.net-%26-angular\" tabindex=\"-1\">Technical LEAD &amp; Architect | .NET &amp; Angular</h1>\n<img class=\"skip-float-end\" style=\"height: 12em;\" src=\"/hire-fte/business card.png\" alt=\"image\" />\n<hr>\n<p>Thank you for reaching out.</p>\n<p><strong>If you checked my <a href=\"https://www.linkedin.com/in/hideghety/\" target=\"_blank\">LinkedIN headline and profile</a></strong>, did a match then it’s without doubt that I am a <strong>suitable</strong> candidate for the position.</p>\n<p>I possess over <strong>20 years of experience</strong> in software <strong>development, architecture and team-leading</strong>, so I’m <strong>interested only in specific roles</strong>.</p>",
+        "text": "Technical LEAD &amp; Architect | .NET &amp; Angular\n\nThank you for reaching out.\nIf you checked my LinkedIN headline and profile, did a match then it’s without doubt that I am a suitable candidate for the position.\nI possess over 20 years of experience in software development, architecture and team-leading, so I’m interested only in specific roles.\nBefore getting in touch with me please ensure that:\n\nall my terms and conditions are met,\nthat a comprehensive job description is provided (with all the details on the team, tasks, …)\n…along with an hourly rate for the approved position.\n\nRoles I Consider\n\nOnly on-hands technical- and team-LEAD roles (~20% coding, rest: architecture/BA/PM/lead/mentoring)\nMust be .NET based, Angular is a complementary stack\n100% REMOTE (no hybrid)\nConsidering just EST / CST based teams\nFT (full time ~ 40hrs/week) but only on C2C (I have my own company - do invoicing, all work is conducted by me so: no 3rd parties, there’s no need for work permit nor GC)\n\nIf all above criteria are met and you like my experience and are considering me, feel free to reserve a time for a call (Zoom) [link].\n\nNOTE: I allowed scheduling without a notice time, so if you plan the call within the upcoming 1-4 hrs, plz. make sure to drop a message on LinkedIn (it’s easy to miss if not planned ahead, and I really would not want to waste your time).\n\nPortfolio / Screenshots\n\nMore images...\n\nImage gallery - Application screenshots\n\nImportant Links\n\nThis URL\n\nLinked In\nhttps://www.linkedin.com/in/hideghety/\n\nCV\n[link]\n\nWhat I Do / Services\n[link]\n\nCase Studies\n[link]\n\nSuccess Story\n[link]\n\nProjects\n[link]\n\nconst locationOrigin = window.location.origin;\ndocument.querySelector(\"#this-anchor\").innerText = window.location.href;\ndocument.querySelectorAll(\".anchor-patch\").forEach(a => a.innerText = a.href);"
     },
     {
         "url": "/",
         "title": "Index",
-        "date": "Wed Dec 07 2022 09:48:58 GMT+0000 (Coordinated Universal Time)",
+        "date": "Wed Dec 14 2022 13:37:15 GMT+0000 (Coordinated Universal Time)",
         "author": "",
         "image": "",
         "tags": ["www","home"],
@@ -222,7 +222,7 @@
     {
         "url": "/projects/",
         "title": "Projects",
-        "date": "Wed Dec 07 2022 09:48:58 GMT+0000 (Coordinated Universal Time)",
+        "date": "Wed Dec 14 2022 13:37:15 GMT+0000 (Coordinated Universal Time)",
         "author": "",
         "image": "",
         "tags": ["www"],
@@ -233,7 +233,7 @@
     {
         "url": "/success-stories/ih-tla/",
         "title": "The Impact Health Success Story",
-        "date": "Wed Dec 07 2022 09:48:58 GMT+0000 (Coordinated Universal Time)",
+        "date": "Wed Dec 14 2022 13:37:15 GMT+0000 (Coordinated Universal Time)",
         "author": "",
         "image": "",
         "tags": ["www"],
@@ -244,7 +244,7 @@
     {
         "url": "/www/success-stories/",
         "title": "Success stories",
-        "date": "Wed Dec 07 2022 09:48:58 GMT+0000 (Coordinated Universal Time)",
+        "date": "Wed Dec 14 2022 13:37:15 GMT+0000 (Coordinated Universal Time)",
         "author": "",
         "image": "",
         "tags": ["www"],

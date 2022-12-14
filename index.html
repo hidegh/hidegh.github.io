@@ -10,15 +10,15 @@
         <meta http-equiv="Pragma" content="no-cache">
         <meta http-equiv="Expires" content="-1">
 
-        <title>Index | BLOG</title>
-        <meta name="title" content="Index | BLOG">
+        <title>Index | Reflective Tech Consulting For Succesful Projects</title>
+        <meta name="title" content="Index | Reflective Tech Consulting For Succesful Projects">
         <meta name="description" content="Helping others with useful content">
-        <meta name="keywords" content="www,home,digitalization,business,management,agile,software,softwareengineering,softwarearchitecture,programming">
+        <meta name="keywords" content="www,home,Software Projects Done Right,Effective Software Solutions,On-hand Technical Leadership,Project Rescue,Fractional Leadership,Fractional CTO,Simple Approach,No Huge Upfront Design,Balanced Tactical and Strategic Approaches,Problem Finder,Digitalization,Consultation,Management,Team Management,Mentoring,Software Procurement,Software Architecture,Software Development,Software Best Practices">
         <meta name="author" content="">
         <meta name="robots" content="index, follow">
 
-        <link rel="canonical" href="https://blog.domain.com/">
-        <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+        <link rel="canonical" href="https://reflectivetechconsulting.com//">
+        <link rel="shortcut icon" type="image/png" href="/assets/reflection logo.ico">
         
         <link rel="preconnect" href="cdnjs.cloudflare.com">
         <link rel="dns-prefetch" href="cdnjs.cloudflare.com">
@@ -78,11 +78,12 @@
             }         
         </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous">
+        
+        <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js" integrity="sha256-gHiUEskgBO+3ccSDRM+c5+nEwTGp64R99KYPfITpnuo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" crossorigin="anonymous">
         <script>
             function InitAOS() {
-                AOS.init({ duration: 1000, offset:0 });
+                new WOW({ animateClass: 'animate__animated' }).init();
             }
         </script>
 
@@ -140,7 +141,7 @@
   }
 
   .landing .news {
-
+    color: var(--bs-light);
   }
 
   .landing .content {
@@ -153,8 +154,8 @@
   }
 
   .hints .content {
+    position: relative;
     padding: 0;
-
     color: var(--bs-light);
     background: var(--bs-dark);
     border: 1px solid var(--bs-dark);      
@@ -231,7 +232,7 @@
     background-color: var(--bs-dark) !important;
     color: var(--bs-light) !important;
   }
-
+  
 </style>
 
     </head>
@@ -242,8 +243,11 @@
 
     <div class="container">
 
-        <a class="navbar-brand align-middle" href="#">
-            <img src="/assets/reflection logo.png" />
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="d-flex flex-column">
+                <img src="/assets/reflection logo.png" />
+                <span class="navbar-brand-subtitle align-self-center">ReflectiveTechConsulting.Com</span>
+            </div>
         </a>
 
         <div class="ms-auto mx-2"></div>
@@ -367,7 +371,7 @@ d-sm-none = hide if above sm
         <div class="p-5 g-5 d-flex flex-column">
 
           <div class="d-none row mt-n3 mb-3">
-            <div class="col align-items-center" data-aos="fade-down">
+            <div class="col align-items-center wow animate__bounce">
               <div class="news d-inline">
                 New articles available!
               </div>
@@ -376,7 +380,7 @@ d-sm-none = hide if above sm
 
           <div class="row flex-grow-1 align-items-center justify-content-center">
 
-            <div class="col align-items-center" data-aos="zoom-in">
+            <div class="col align-items-center wow animate__fadeInUp">
             
               <div class="content">
 
@@ -411,11 +415,11 @@ d-sm-none = hide if above sm
     <!-- ST: HINTS-->
     <section class="hints">
 
-      <div class="container p-0" data-aos="zoom-in-up">
+      <div class="container p-0">
 
         <div class="content p-3 pt-5 p-lg-0">
       
-          <div class="row align-items-stretch justify-content-center" data-aos="zoom-in-up">
+          <div class="row align-items-stretch justify-content-center">
             
             <div class="d-none d-md-block col-md-4">
               <div class="h-100 w-100 using-data-jarallax" data-jarallax data-type="scroll" data-speed="1.4" data-img-position="42.5% 50%">
@@ -486,7 +490,7 @@ d-sm-none = hide if above sm
 
     <div class="container p-sm-0 my-3 my-lg-5">
 
-      <div class="p-3 pt-4 bg-white shadow border">
+      <div class="p-3 px-lg-5 pt-4 small bg-white shadow border">
         
         <div class="row g-5 align-items-top justify-content-center">
           
@@ -534,7 +538,7 @@ d-sm-none = hide if above sm
     <!-- ST: WHO-WHAT -->
     <section class="who-what top-delimiter" id="who-what">
     
-      <div class="container p-0" data-aos="slide-left">
+      <div class="container p-0 wow animate__slideInRight" data-wow-duration="2s">
 
         <div class="px-5 shadow border text-dark bg-white">
 
@@ -632,7 +636,7 @@ d-sm-none = hide if above sm
           
         </div>
 
-        <div class="secundo p-3 p-lg-0 mt-5" data-aos="slide-up">
+        <div class="secundo p-3 p-lg-0 mt-5 wow animate__slideInUp">
 
           <div class="row gy-3 align-items-stretch">
 
@@ -797,7 +801,7 @@ d-sm-none = hide if above sm
     -->
     <img class="jarallax-img" src="/assets/bg/office/unsplash-benjamin-child-GWe0dlVD9e0.jpg">
 
-    <div class="container p-sm-0 py-3 py-lg-5" data-aos="slide-left">
+    <div class="container p-sm-0 py-3 py-lg-5 wow animate__slideInLeft">
       
       <div>
 
@@ -809,7 +813,7 @@ d-sm-none = hide if above sm
 
           <div class="accordion-item shadow">
             <h2 class="accordion-header">
-              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#case_study_ih_tl" onclick="fixAOS()">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#case_study_ih_tl">
                 <span class="fs-5">Covid Testing and Vaccination Company</span>
               </button>
             </h2>
@@ -833,7 +837,7 @@ d-sm-none = hide if above sm
 
           <div class="accordion-item shadow">
             <h2 class="accordion-header">
-              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#case_study_ups" onclick="fixAOS()">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#case_study_ups">
                 <span class="fs-5">Specialty Service Provider for the Energy Industry</span>
               </button>
             </h2>
@@ -861,7 +865,7 @@ d-sm-none = hide if above sm
   </section><!-- ET: CASE STUDIES -->
 
   <!-- ST: CONTACT-US -->
-  <section class="contact-us top-delimiter bg-dark text-light" id="contact-us" data-aos="slide-up">
+  <section class="contact-us top-delimiter bg-dark text-light wow animate__slideInUp" id="contact-us">
     
     <div class="container p-5">
 
@@ -1399,11 +1403,6 @@ d-sm-none = hide if above sm
   InitTyped();
   InitAOS();
   InitCounters()
-
-  function fixAOS() {
-    setTimeout(() => AOS.refresh(), 250);
-  }
-
 </script>
 
 
