@@ -111,7 +111,7 @@
 
     <div class="container">
 
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="/">
             <div class="d-flex flex-column">
                 <img src="/assets/reflection logo.png" />
                 <span class="navbar-brand-subtitle align-self-center">ReflectiveTechConsulting.Com</span>
@@ -212,24 +212,24 @@ d-sm-none = hide if above sm
             
             
 
-    
+    <div class="layout layout-post">
 
-    <div id="wrapper">
+        <div class="main-container container">
 
-        <div id="content-container" class="hide-on-search-results-container-display container">
+            <div class="hide-on-search-results-container-display row row">
 
-            <div class="row g-0">
+                <div class="main-content-header col-12">
+                    
+                </div>
 
-                <div class="main-container col-12 col-xl-9 overflow-hidden">
+                <div class="main-content col-12 col-xl-9 overflow-hidden">
                     
 
-    <div class="post">
-
+    
+    
+    
+    <section class="p-3 d-flex d-flex justify-content-between align-items-center d-hide-if-empty">
         
-        
-        
-        <section class="p-3 d-flex d-flex justify-content-between align-items-center d-hide-if-empty">
-            
 
 <section class="share-wrapper">
     <span class="share-label text-muted mr-1">Share post</span>
@@ -291,24 +291,24 @@ d-sm-none = hide if above sm
 </script>
 
 
+    </section>
+    
+    <section class="article print-container p-3 mb-3">
+
+        <section>
+            <h1>Getting Started</h1>
+            
         </section>
-        
-        <section class="article print-container p-3 mb-3">
+    
+        <section class="small">
+            <div class="row row-cols-auto gx-3">
+                <div class="col"><i class="fa-solid fa-calendar-days fa-fw"></i>09 Aug 2019</div>
+                <div class="col"><i class="fa-regular fa-user fa-fw"></i>cotes</div>
+                <div class="col"><i class="fa-solid fa-stopwatch fa-fw"></i> 4 min reading time</div>
+            </div>
+        </section>
 
-            <section>
-                <h1>Getting Started</h1>
-                
-            </section>
-        
-            <section class="small">
-                <div class="row row-cols-auto gx-3">
-                    <div class="col"><i class="fa-solid fa-calendar-days fa-fw"></i>09 Aug 2019</div>
-                    <div class="col"><i class="fa-regular fa-user fa-fw"></i>cotes</div>
-                    <div class="col"><i class="fa-solid fa-stopwatch fa-fw"></i> 4 min reading time</div>
-                </div>
-            </section>
-
-            <section class="small text-muted d-flex gap-3">
+        <section class="small text-muted d-flex gap-3">
 <div class="d-flex">
     <div class="d-inline-block me-1">
         <a href="/categories"><i class="far fa-fw fa-folder-open"></i></a>
@@ -341,11 +341,11 @@ d-sm-none = hide if above sm
 </div>
 </section>
 
-            <hr/>
+        <hr/>
 
-            <section class="pb-3">
-                
-                <h2 id="prerequisites" tabindex="-1">Prerequisites</h2>
+        <section class="pb-3">
+            
+            <h2 id="prerequisites" tabindex="-1">Prerequisites</h2>
 <p>Follow the instructions in the <a href="https://jekyllrb.com/docs/installation/">Jekyll Docs</a> to complete the installation of <code>Ruby</code>, <code>RubyGems</code>, <code>Jekyll</code>, and <code>Bundler</code>. In addition, <a href="https://git-scm.com/">Git</a> is also required to be installed.</p>
 <h2 id="installation" tabindex="-1">Installation</h2>
 <h3 id="creating-a-new-site" tabindex="-1">Creating a New Site</h3>
@@ -446,12 +446,12 @@ The merge is likely to conflict with your local modifications. Please be patient
 </li>
 </ul>
 
-            </section>
-
         </section>
 
-        <section class="p-3">
-            
+    </section>
+
+    <section class="p-3">
+        
 
 
 <div class="d-flex">
@@ -460,18 +460,16 @@ The merge is likely to conflict with your local modifications. Please be patient
     </div>
     </div>
 
-        </section>
+    </section>
 
-        <section class="p-3 d-hide-if-empty">
-            
-        </section>
-
-    </div>
+    <section class="p-3 d-hide-if-empty">
+        
+    </section>
   
 
                 </div>
 
-                <aside class="sticky-container d-none d-xl-block small col-xl-3">
+                <aside class="main-aside sticky-container d-none d-xl-block small col-xl-3">
                     
 
     <section class="sticky p-3 mb-3 d-hide-if-empty">
@@ -753,15 +751,19 @@ The merge is likely to conflict with your local modifications. Please be patient
 
                 </aside>
 
+                <div class="main-content-footer col-12">
+                    
+                </div>
+
             </div>
 
         </div>
 
-        <div id="search-results-container" class="d-none container">
+        <div class="search-results-container container">
 
-            <div class="row g-0">
-            
-                <div class="search-results-wrapper col-12 overflow-hidden">
+            <div class="row">
+                
+                <div class="main-content search-results-wrapper col-12 overflow-hidden">
                 </div>
 
             </div>
@@ -769,8 +771,6 @@ The merge is likely to conflict with your local modifications. Please be patient
         </div>
 
     </div>
-
-    
 
 
         </main>
@@ -1081,7 +1081,7 @@ The merge is likely to conflict with your local modifications. Please be patient
     // NOTE:
     // #search-results-container must have an additional element with a .search-results class
     // these objects (along with #global-content-view) were already set up inside main.njk
-    blogSearch.init('.blog-search-input', '.blog-search-cancel', '#search-results-container', '.hide-on-search-results-container-display');
+    blogSearch.init('.blog-search-input', '.blog-search-cancel', '.search-results-container', '.hide-on-search-results-container-display');
 
 </script>
 
