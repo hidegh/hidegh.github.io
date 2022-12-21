@@ -13960,6 +13960,7 @@ Styling
 */
 main {
   background-color: var(--color-bg-main);
+  background: top center/cover url(/assets/bg/office/unsplash-austin-distel-wawEfYdpkag-unsplash.jpg) fixed;
 }
 main .layout-main .search-results-container {
   background-color: var(--color-bg-content);
