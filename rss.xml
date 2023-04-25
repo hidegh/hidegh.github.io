@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2022-12-15T00:00:00Z</updated>
+  <updated>2023-04-25T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -14,5 +14,20 @@
     <updated>2022-12-15T00:00:00Z</updated>
     <id>/post/sample-post/</id> 
     <summary># This is just a **sample**</summary>
+  </entry>
+  <entry>
+    <title>The Seven Stages of Expertise in Software Engineering</title>
+    <link href="/post/the-seven-stages-of-expertise-in-software-engineering/"/>
+    <updated>2023-04-25T00:00:00Z</updated>
+    <id>/post/the-seven-stages-of-expertise-in-software-engineering/</id> 
+    <summary>This article is still **relevant for any startup or company involved in software development**. It contains useful informations - just like &quot;Clean Code&quot; by Robert C Martin - **details within this article are timeless**.
+
+I first came across this article around 2016, when I noticed a large **disparity between the usual junior-mid-senior scaling** of developers. This scaling system, unlike others, is **universal**, easy to understand, and **the bear hunting analogy** used in the original article by Meilir Page-Jones makes it a **humorous and enjoyable read**.
+
+Since then, the original page has been taken down (an archive can be found here). With the permission of the author, I am allowed to distribute the original article.
+
+I made some slight changes by adding additional titles and styling. **Since there is more behind the seven stages, it is likely to be referenced frequently.**
+
+**We hope you enjoy reading this article and that it helps your next projects be successful.**</summary>
   </entry>
 </feed>
