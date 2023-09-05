@@ -103,6 +103,46 @@
             }
         </script>
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/tiny-slider.css">
+        <script src="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/min/tiny-slider.min.js"></script>
+        <style>
+        
+            .tns-nav {
+                text-align: center;
+                margin: 1em 0;
+            }
+
+            .tns-nav > [aria-controls] {
+                width: .5em;
+                height: .5em;
+                padding: 0;
+                margin: .5em .25em;                
+                border: 0;
+                border-radius: 50%;
+                background: var(--bs-gray);
+            }
+
+            .tns-nav > .tns-nav-active { 
+                background: var(--bs-gray-dark); 
+            }
+
+        </style>
+        <!--
+        Possibilities:
+        - bootstrap carousel (1 item visible)
+        - css carousel https://codepen.io/medrupaloscil/pen/OJNrLLX
+        - vanilla JS: keen-slider, swiper, tiny-slider, glider
+        - jQuery carousel: slick-carousel, glidejs
+        -->
+        <script>
+            function InitCarousel(selector, options) {
+                var carousel = tns({
+                    container: selector,
+                    ...options
+                });
+            }
+        </script>
+        
         <style>
 
   .text-highlight {
@@ -119,6 +159,30 @@
   
   .bottom-delimiter {
     border-bottom: .25em solid var(--color-delimiter);      
+  }
+
+  .testimonial-card {
+    margin-top: 1em; /* 0em; 1em; */
+    width: 100%;
+  }
+
+  .testimonial-card .card-up {
+    height: .5em; /* 5em; -.5em; */
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .testimonial-card .avatar {
+    margin-top: -1em; /* -4em; -1em; */      
+    height: 8em;
+    width: 8em;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    /*
+    margin-right: auto !important;
+    margin-left: auto !important;
+    */
+    margin-left: 1em;
   }
 
 </style>
@@ -793,7 +857,87 @@ d-sm-none = hide if above sm
             <p class="lead fw-bold">Hear the Stories from Our Clients</p>
             <p class="text-primary-emphasis">Discover firsthand accounts of how our solutions have transformed businesses.</p>
 
-            <p class="p-3 px-lg-5 text-center bg-danger text-light">See: LinkedIn Recommendations / Testimonials</p>
+            <p class="d-none p-3 px-lg-5 text-center bg-danger text-light">See: LinkedIn Recommendations / Testimonials</p>
+
+            <section class="testimonialsCarousel d-flex align-items-stretch">
+             
+              <div class="mx-1 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                  <div class="card-up" style="background-color: #9d789b;"></div>
+                  <div class="avatar">
+                    <img src="/www/_assets/tony-c.jpeg" class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body">
+                    <p class="p0 fs-5">Tony Costanzo</p>
+                    <p class="p0 small text-body-secondary">Co-Founder of SimplyPut Consulting</p>
+                    <hr />
+                    <p class="p0 small">
+                      <i class="fas fa-quote-left pe-2"></i>
+                      Balazs joined us as a Technical Lead (Managing Engineer) when our project with a major client was failing.
+                      Within months, he turned things around, saving our client and fortifying our position.
+                      His unmatched expertise and leadership have reshaped our clients' software development for the better.                      
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mx-1 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                  <div class="card-up" style="background-color: #7a81a8;"></div>
+                  <div class="avatar">
+                    <img src="/www/_assets/manoj-k.jpeg" class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body">
+                    <p class="p0 fs-5">Manoj Kurup</p>
+                    <p class="p0 small text-body-secondary">Vice President Information Technology at Impact Health</p>
+                    <hr />
+                    <p class="p0 small">
+                      <i class="fas fa-quote-left pe-2"></i>
+                      Balazs has been an integral part of our Software Development team, he has led the development efforts and the team for all our mission critical applications.
+                      Supporting over 2500 events and help manage, maintain and track close to 20K field staff that we have on our roaster.
+                      All this was made possible in a very short time by his efforts and he has been working on continuinally improving the product to meet the organizations needs while maintaining highest level of quality in the solutions delivered.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mx-1 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                  <div class="card-up" style="background-color: #6d5b98;"></div>
+                  <div class="avatar">
+                    <img src="/www/_assets/stephanie-g.jpeg" class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body">
+                    <p class="p0 fs-5">Stephanie Grizzle</p>
+                    <p class="p0 small text-body-secondary">Senior Project Manager at SimplyPut Consulting</p>
+                    <hr />
+                    <p class="p0 small">
+                      <i class="fas fa-quote-left pe-2"></i>
+                      I have worked with Balazs a few times now at different companies.
+                      He has always kept me on my toes with his insight and expertise.
+                      I like the way he thinks outside of the box.
+                      Sometimes I don't even realize the implications of what I am asking until he asks me questions.
+                      Balazs has superior skills and is very dedicate to knowledge building and information sharing.
+                      I did recommend him when we were seeking a technical expert and will do it again.                   
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mx-1 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                  <div class="card-up" style="background-color: #0a66c2;"></div>
+                  <div class="avatar">
+                    <img src="/www/_assets/linkedin-circle.png" class="rounded-circle img-fluid" />
+                  </div>
+                  <div class="card-body">
+                    For More See LinkedIn Recommendations
+                  </div>
+                </div>
+              </div>              
+
+            </section>
+
           </div>
 
         </div>
@@ -1041,6 +1185,16 @@ d-sm-none = hide if above sm
                 />
               </div>
             </div>
+            <div class="mb-3">
+              <label for="comments" class="form-label">Comments &amp; Notes</label>
+              <textarea
+                type="comments"
+                class="form-control compact-input"
+                id="comments"
+                name="Comments"
+                required
+              ></textarea>
+            </div>
             <div class="mb-3 text-center">
               <button type="submit" class="btn btn-danger mt-3">Submit</button>
             </div>
@@ -1164,6 +1318,7 @@ https://github.com/levinunnink/html-form-to-google-sheet
 
 https://script.google.com/macros/s/AKfycbyidk1Ivj_HGs31JhZ3Op8W3ndNZHzti-6Ah-elzEeZDqn4gTBLNhB3vYXE-4oXQ3tk4A/exec
 -->
+
                         
                     </article>
                     <div class="article-tail">
@@ -1533,7 +1688,23 @@ https://script.google.com/macros/s/AKfycbyidk1Ivj_HGs31JhZ3Op8W3ndNZHzti-6Ah-elz
   InitParallax();
   InitTyped();
   InitAOS();
-  InitCounters()
+  InitCounters();
+
+  // tiny slider
+  InitCarousel(".testimonialsCarousel", {
+    items: 1,
+    loop: true,
+    rewind: true,
+    speed: 1000,
+    mouseDrag: true,
+    navPosition: "bottom",
+
+    autoplay: false,
+    autoplayTimeout: 5000,
+
+    controls: false,
+    autoplayButtonOutput: false,
+  });
 </script>
 
 
