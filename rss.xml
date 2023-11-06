@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2023-04-25T00:00:00Z</updated>
+  <updated>2023-11-06T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -29,5 +29,25 @@ Since then, the original page has been taken down (an archive can be found here)
 I made some slight changes by adding additional titles and styling. **Since there is more behind the seven stages, it is likely to be referenced frequently.**
 
 **We hope you enjoy reading this article and that it helps your next projects be successful.**</summary>
+  </entry>
+  <entry>
+    <title>The Equity Fallacy</title>
+    <link href="/post/the-equity-fallacy/"/>
+    <updated>2023-11-06T00:00:00Z</updated>
+    <id>/post/the-equity-fallacy/</id> 
+    <summary>In the fast-paced world of startups, the journey to success is fraught with uncertainties. Startling statistics reveal that **only a mere 1% of startups manage to reach the coveted IPO stage**, with a significant number meeting their demise within the initial five years[^1].
+
+The idea of working for equity alone is a double-edged sword, raising questions about the feasibility and motivations of those with extensive technical expertise considering this path.</summary>
+  </entry>
+  <entry>
+    <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>
+    <link href="/post/the-critical-choice-picking-the-perfect-cto-archetype-for-your-business-startup/"/>
+    <updated>2023-10-30T00:00:00Z</updated>
+    <id>/post/the-critical-choice-picking-the-perfect-cto-archetype-for-your-business-startup/</id> 
+    <summary>**In a world where exceptional technical leadership can make or break a company, it&#39;s essential to consider the role of a Chief Technology Officer (CTO) with utmost care.**
+
+Selecting the right CTO is a critical decision, one that can significantly impact your business at its current stage and align with the existing roles within your engineering team. The wrong choice can lead to friction, inefficiencies, and unnecessary expenses, while the right one can act as an enabler, streamlining processes, and facilitating seamless future development without additional sacrifices.
+
+**Here&#39;s the good news:** you don&#39;t always need a _full-time_ CTO (and deep pockets) to get the tech expertise you need. Clear up some _common misconceptions_, match your CTO to your business, and watch it thrive.</summary>
   </entry>
 </feed>
