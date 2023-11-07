@@ -14709,14 +14709,17 @@ body.fit-height main .layout .content-container .hide-if-search-results-containe
   display: flex;
   flex-direction: column;
 }
+body main .layout {
+  position: relative;
+}
 body main .layout .content-container .aside-section [non-sticky-heading] {
   display: none;
 }
 body main .layout.layout-blog-related, body main .layout.layout-post {
-  background: top center/cover url(/assets/bg/office/unsplash-austin-distel-wawEfYdpkag-unsplash.jpg) fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.333)), url(/assets/bg/office/unsplash-austin-distel-wawEfYdpkag-unsplash.jpg) no-repeat top center/cover fixed;
 }
 body main .layout.layout-projects {
-  background: top center/cover url(/assets/bg/office/unsplash-austin-distel-wawEfYdpkag-unsplash.jpg) fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.333)), url(/assets/bg/office/unsplash-austin-distel-wawEfYdpkag-unsplash.jpg) no-repeat top center/cover fixed;
 }
 
 /*

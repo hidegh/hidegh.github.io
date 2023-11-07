@@ -9,13 +9,6 @@
     <name></name>
   </author>
   <entry>
-    <title>Sample post</title>
-    <link href="/post/sample-post/"/>
-    <updated>2022-12-15T00:00:00Z</updated>
-    <id>/post/sample-post/</id> 
-    <summary># This is just a **sample**</summary>
-  </entry>
-  <entry>
     <title>The Seven Stages of Expertise in Software Engineering</title>
     <link href="/post/the-seven-stages-of-expertise-in-software-engineering/"/>
     <updated>2023-04-25T00:00:00Z</updated>
