@@ -980,22 +980,26 @@ d-sm-none = hide if above sm
         });
     }
 
-    const consentRequired = !!true;
-    const anonymizeIp = !!true;
+    (function () {
+        
+        const consentRequired = !!true;
+        const anonymizeIp = !!true;
 
-    if (consentRequired == false) {
-        loadGA(anonymizeIp);
-    } else {
-        switch (CookieConsent.getStatus()) {
-            case CookieConsent.StatusEnum.enabled:
-                loadGA(anonymizeIp);
-                break;
-            default:
-                // no consent given (or no answer ~ default) - we need to anonymize IP
-                loadGA(true);
-                break;
+        if (consentRequired == false) {
+            loadGA(anonymizeIp);
+        } else {
+            switch (CookieConsent.getStatus()) {
+                case CookieConsent.StatusEnum.enabled:
+                    loadGA(anonymizeIp);
+                    break;
+                default:
+                    // no consent given (or no answer ~ default) - we need to anonymize IP
+                    loadGA(true);
+                    break;
+            }
         }
-    }
+  
+    })();
 </script>
 
 
