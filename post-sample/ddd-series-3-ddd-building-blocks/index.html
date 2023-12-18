@@ -924,7 +924,7 @@ The experience might differ depending on whether we’re in a list or on a singl
             </div>
 
             <div class="search-results-container row">
-                <div class="search-results overflow-hidden"></div>
+                <div class="search-results-wrapper overflow-hidden"></div>
             </div>
 
         </div>
@@ -1099,7 +1099,7 @@ The experience might differ depending on whether we’re in a list or on a singl
                 self._showResults ? el.classList.remove("d-none") : el.classList.add("d-none")
                 
                 // find results element (or fallback to container) and set results
-                const resultsEl = el.querySelector(".search-results");
+                const resultsEl = el.querySelector(".search-results-wrapper");
                 const displayEl = resultsEl ?? el;
                 displayEl.innerHTML = self._showResults ? html : "";
             });

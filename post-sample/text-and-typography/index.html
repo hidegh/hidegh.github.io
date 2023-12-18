@@ -1157,7 +1157,7 @@ Praesent maximus aliquam sapien. Sed vel neque in dolor pulvinar auctor. Maecena
             </div>
 
             <div class="search-results-container row">
-                <div class="search-results overflow-hidden"></div>
+                <div class="search-results-wrapper overflow-hidden"></div>
             </div>
 
         </div>
@@ -1332,7 +1332,7 @@ Praesent maximus aliquam sapien. Sed vel neque in dolor pulvinar auctor. Maecena
                 self._showResults ? el.classList.remove("d-none") : el.classList.add("d-none")
                 
                 // find results element (or fallback to container) and set results
-                const resultsEl = el.querySelector(".search-results");
+                const resultsEl = el.querySelector(".search-results-wrapper");
                 const displayEl = resultsEl ?? el;
                 displayEl.innerHTML = self._showResults ? html : "";
             });

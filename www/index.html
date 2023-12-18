@@ -1340,7 +1340,7 @@ https://script.google.com/macros/s/AKfycbyidk1Ivj_HGs31JhZ3Op8W3ndNZHzti-6Ah-elz
             </div>
 
             <div class="search-results-container row _g-0">
-                <div class="search-results overflow-hidden"></div>
+                <div class="search-results-wrapper overflow-hidden"></div>
             </div>
 
         </div>
@@ -1515,7 +1515,7 @@ https://script.google.com/macros/s/AKfycbyidk1Ivj_HGs31JhZ3Op8W3ndNZHzti-6Ah-elz
                 self._showResults ? el.classList.remove("d-none") : el.classList.add("d-none")
                 
                 // find results element (or fallback to container) and set results
-                const resultsEl = el.querySelector(".search-results");
+                const resultsEl = el.querySelector(".search-results-wrapper");
                 const displayEl = resultsEl ?? el;
                 displayEl.innerHTML = self._showResults ? html : "";
             });
