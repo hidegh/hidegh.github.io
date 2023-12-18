@@ -15201,6 +15201,13 @@ Related posts (3)
   transition: all 0.4s ease-in-out;
 }
 
+.layout-post strong:not(.fw-default-style),
+.layout-post b:not(.fw-default-style),
+.layout-post .fw-bold:not(.fw-default-style) {
+  color: var(--color-highlight);
+  font-weight: normal !important;
+}
+
 /*
 Color overrides for mermaid (and mathjax) - as it needs a light background for thin lines to be visible (have contrast)
 */

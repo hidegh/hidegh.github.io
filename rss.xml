@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2023-11-06T00:00:00Z</updated>
+  <updated>2023-11-22T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -24,6 +24,50 @@ I made some slight changes by adding additional titles and styling. **Since ther
 **We hope you enjoy reading this article and that it helps your next projects be successful.**</summary>
   </entry>
   <entry>
+    <title>Effective Email Management for Busy Leaders</title>
+    <link href="/post/effective-email-management-for-busy-leaders/"/>
+    <updated>2023-11-08T00:00:00Z</updated>
+    <id>/post/effective-email-management-for-busy-leaders/</id> 
+    <summary>Efficient email management is a skill that can transform your daily routine and boost your team&#39;s productivity.
+Take the time to refine your email habits, and watch your effectiveness soar!</summary>
+  </entry>
+  <entry>
+    <title>Effective Async Communication for Busy Leaders</title>
+    <link href="/post/effective-async-communication-for-busy-leaders/"/>
+    <updated>2023-11-09T00:00:00Z</updated>
+    <id>/post/effective-async-communication-for-busy-leaders/</id> 
+    <summary>Tired of constant interruptions?
+Say goodbye to productivity killers!
+
+Context switching in synchronous chat programs can be a real productivity killer, leading to increased interruptions and reduced efficiency.
+But fear not, we&#39;ve got the solution to supercharge your work!</summary>
+  </entry>
+  <entry>
+    <title>Effective Meeting Rules</title>
+    <link href="/post/effective-meeting-rules/"/>
+    <updated>2023-11-10T00:00:00Z</updated>
+    <id>/post/effective-meeting-rules/</id> 
+    <summary>Meetings can be a pain—we&#39;ve all been there. The problem? They often lack a plan, decisions are last-minute, and real progress is rare. But fear not! Let&#39;s turn things around with these simple rules to make your meetings actually count!</summary>
+  </entry>
+  <entry>
+    <title>When NOT to use Async Communication</title>
+    <link href="/post/when-not-to-use-async-communication/"/>
+    <updated>2023-11-22T00:00:00Z</updated>
+    <id>/post/when-not-to-use-async-communication/</id> 
+    <summary>Following my &quot;Story of staying in Prague&quot; I realized that, in addition to understanding how to make asynchronous communication work for you, recognizing when not to use asynchronous communication is equally crucial.</summary>
+  </entry>
+  <entry>
+    <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>
+    <link href="/post/the-critical-choice-picking-the-perfect-cto-archetype-for-your-business-startup/"/>
+    <updated>2023-10-31T00:00:00Z</updated>
+    <id>/post/the-critical-choice-picking-the-perfect-cto-archetype-for-your-business-startup/</id> 
+    <summary>**In a world where exceptional technical leadership can make or break a company, it&#39;s essential to consider the role of a Chief Technology Officer (CTO) with utmost care.**
+
+Selecting the right CTO is a critical decision, one that can significantly impact your business at its current stage and align with the existing roles within your engineering team. The wrong choice can lead to friction, inefficiencies, and unnecessary expenses, while the right one can act as an enabler, streamlining processes, and facilitating seamless future development without additional sacrifices.
+
+**Here&#39;s the good news:** you don&#39;t always need a _full-time_ CTO (and deep pockets) to get the tech expertise you need. Clear up some _common misconceptions_, match your CTO to your business, and watch it thrive.</summary>
+  </entry>
+  <entry>
     <title>The Equity Fallacy</title>
     <link href="/post/the-equity-fallacy/"/>
     <updated>2023-11-06T00:00:00Z</updated>
@@ -31,16 +75,5 @@ I made some slight changes by adding additional titles and styling. **Since ther
     <summary>In the fast-paced world of startups, the journey to success is fraught with uncertainties. Startling statistics reveal that **only a mere 1% of startups manage to reach the coveted IPO stage**, with a significant number meeting their demise within the initial five years[^1].
 
 The idea of working for equity alone is a double-edged sword, raising questions about the feasibility and motivations of those with extensive technical expertise considering this path.</summary>
-  </entry>
-  <entry>
-    <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>
-    <link href="/post/the-critical-choice-picking-the-perfect-cto-archetype-for-your-business-startup/"/>
-    <updated>2023-10-30T00:00:00Z</updated>
-    <id>/post/the-critical-choice-picking-the-perfect-cto-archetype-for-your-business-startup/</id> 
-    <summary>**In a world where exceptional technical leadership can make or break a company, it&#39;s essential to consider the role of a Chief Technology Officer (CTO) with utmost care.**
-
-Selecting the right CTO is a critical decision, one that can significantly impact your business at its current stage and align with the existing roles within your engineering team. The wrong choice can lead to friction, inefficiencies, and unnecessary expenses, while the right one can act as an enabler, streamlining processes, and facilitating seamless future development without additional sacrifices.
-
-**Here&#39;s the good news:** you don&#39;t always need a _full-time_ CTO (and deep pockets) to get the tech expertise you need. Clear up some _common misconceptions_, match your CTO to your business, and watch it thrive.</summary>
   </entry>
 </feed>
