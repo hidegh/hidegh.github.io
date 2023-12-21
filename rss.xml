@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2023-11-22T00:00:00Z</updated>
+  <updated>2023-12-21T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -75,5 +75,14 @@ Selecting the right CTO is a critical decision, one that can significantly impac
     <summary>In the fast-paced world of startups, the journey to success is fraught with uncertainties. Startling statistics reveal that **only a mere 1% of startups manage to reach the coveted IPO stage**, with a significant number meeting their demise within the initial five years[^1].
 
 The idea of working for equity alone is a double-edged sword, raising questions about the feasibility and motivations of those with extensive technical expertise considering this path.</summary>
+  </entry>
+  <entry>
+    <title>Rapid Byte Brilliance (RBB) Newsletter</title>
+    <link href="/post/rapid-byte-brilliance-(rbb)-newsletter/"/>
+    <updated>2023-12-21T00:00:00Z</updated>
+    <id>/post/rapid-byte-brilliance-(rbb)-newsletter/</id> 
+    <summary>Dear Esteemed **CEOs**, **CTOs**, **VPEs**, and **Technical Leads**, in forging the **excellence** of your software, the **pivotal role** played by your **architects** and **developers**, cannot be overstated.
+
+Steer your team away from subpar videos and articles to **save their valuable time**. Ensure a trajectory of success by emphasizing that your developers **engage with top-tier learning materials**.</summary>
   </entry>
 </feed>
