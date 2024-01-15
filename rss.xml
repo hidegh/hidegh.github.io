@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2024-01-05T00:00:00Z</updated>
+  <updated>2024-01-15T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -64,6 +64,15 @@ But fear not, we&#39;ve got the solution to supercharge your work!</summary>
     <summary>**Knowing the right things** is the way to move forward **quickly** and produce **great results**.
 
 This post is intended for developers eager to enhance their skills. It&#39;s equally valuable for **CEOs**, **CTOs**, **VPEs**, and **Technical Leads** who oversee a team and aspire to deliver **quality products**. Half of the videos do deal with management related-topics.</summary>
+  </entry>
+  <entry>
+    <title>John K. Ousterhout - A Philosophy of Software Design</title>
+    <link href="/post/john-k.-ousterhout-a-philosophy-of-software-design/"/>
+    <updated>2024-01-15T00:00:00Z</updated>
+    <id>/post/john-k.-ousterhout-a-philosophy-of-software-design/</id> 
+    <summary>Achieving **excellence** in software development demands a balanced mix of hands-on creativity and principled methodology. As a **leader** (CEO, founder, technical lead), you need to **figure out what works for you and your team**!
+
+Now let&#39;s tackle &quot;software design&quot; again, from a slightly **different perspective**...</summary>
   </entry>
   <entry>
     <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>
