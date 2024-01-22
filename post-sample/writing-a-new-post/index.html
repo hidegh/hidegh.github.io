@@ -712,10 +712,10 @@ d-sm-none = hide if above sm
 <pre class="language-markdown"><code class="language-markdown"><span class="token code"><span class="token punctuation">```</span><span class="token code-language">yaml</span><br><span class="token code-block language-yaml"><span class="token key atrule">key</span><span class="token punctuation">:</span> value</span><br><span class="token punctuation">```</span></span></code></pre>
 <h4 id="line-number" tabindex="-1">Line Number</h4>
 <p>By default, all languages except <code>plaintext</code>, <code>console</code>, and <code>terminal</code> will display line numbers. When you want to hide the line number of a code block, add the class <code>nolineno</code> to it:</p>
-<pre class="language-markdown"><code class="language-markdown"><span class="token code"><span class="token punctuation">```</span><span class="token code-language">shell</span><br><span class="token code-block language-shell">echo 'No more line numbers!'</span><br><span class="token punctuation">```</span></span><br>{: .nolineno }</code></pre>
+<pre class="language-markdown"><code class="language-markdown"><span class="token code"><span class="token punctuation">```</span><span class="token code-language">shell</span><br><span class="token code-block language-shell"><span class="token builtin class-name">echo</span> <span class="token string">'No more line numbers!'</span></span><br><span class="token punctuation">```</span></span><br>{: .nolineno }</code></pre>
 <h4 id="specifying-the-filename" tabindex="-1">Specifying the Filename</h4>
 <p>You may have noticed that the code language will be displayed at the top of the code block. If you want to replace it with the file name, you can add the attribute <code>file</code> to achieve this:</p>
-<pre class="language-markdown"><code class="language-markdown"><span class="token code"><span class="token punctuation">```</span><span class="token code-language">shell</span><br><span class="token code-block language-shell"># content</span><br><span class="token punctuation">```</span></span><br>{: file="path/to/file" }</code></pre>
+<pre class="language-markdown"><code class="language-markdown"><span class="token code"><span class="token punctuation">```</span><span class="token code-language">shell</span><br><span class="token code-block language-shell"><span class="token comment"># content</span></span><br><span class="token punctuation">```</span></span><br>{: file="path/to/file" }</code></pre>
 <h4 id="liquid-codes" tabindex="-1">Liquid Codes</h4>
 <p>If you want to display the <strong>Liquid</strong> snippet, surround the liquid code with <code>and</code>:</p>
 <pre class="language-markdown"><code class="language-markdown"><br><span class="token code"><span class="token punctuation">```</span><span class="token code-language">liquid</span><br><span class="token code-block language-liquid">{% if product.title contains 'Pack' %}<br>  This product's title contains the word Pack.<br>{% endif %}</span><br><span class="token punctuation">```</span></span><br></code></pre>
@@ -737,6 +737,23 @@ d-sm-none = hide if above sm
     <section class="further-reading">
         <h5 class="text-body-secondary">Further Reading</h5>
         <div class="post-navigation related-posts dynamic-headings">
+    
+	<div class="card post-preview">
+		
+		<a class="stretched-link" href="/post/domain-driven-design-and-refactoring/"></a>
+
+		<div class="card-body">
+
+			<div class="card-text post-date">Jan 22, 2024</div>
+			<div class="card-title post-title">Domain Driven Design and Refactoring</div>
+			<div class="card-text post-content">
+				<p>We have reached the 3rd part of our quality code series—now, let's talk about <strong>Domain-Driven Design (DDD)</strong>. Why does it matter? Because <strong>we solve business problems</strong>, and DDD tackles …</p>
+
+			</div>
+	
+		</div>
+
+	</div>	
     
 	<div class="card post-preview">
 		
@@ -766,23 +783,6 @@ d-sm-none = hide if above sm
 			<div class="card-text post-content">
 				<p><strong>Knowing the right things</strong> is the way to move forward <strong>quickly</strong> and produce <strong>great results</strong>.</p>
 <p>This post is intended for developers eager to enhance their skills. It's equally valuable for …</p>
-
-			</div>
-	
-		</div>
-
-	</div>	
-    
-	<div class="card post-preview">
-		
-		<a class="stretched-link" href="/post/rapid-byte-brilliance-(rbb)-newsletter/"></a>
-
-		<div class="card-body">
-
-			<div class="card-text post-date">Dec 21, 2023</div>
-			<div class="card-title post-title">Rapid Byte Brilliance (RBB) Newsletter</div>
-			<div class="card-text post-content">
-				<p>Dear Esteemed <strong>CEOs</strong>, <strong>CTOs</strong>, <strong>VPEs</strong>, and <strong>Technical Leads</strong>, in forging the <strong>excellence</strong> of your software, the <strong>pivotal role</strong> played by your <strong>architects</strong> and <strong>developers</strong>, cannot be …</p>
 
 			</div>
 	
@@ -865,6 +865,13 @@ d-sm-none = hide if above sm
     
     <li>
         
+        <a href="/post/domain-driven-design-and-refactoring/">
+            <span>Domain Driven Design and Refactoring</span>
+        </a>
+    </li>
+    
+    <li>
+        
         <a href="/post/john-k.-ousterhout-a-philosophy-of-software-design/">
             <span>John K. Ousterhout - A Philosophy of Software Design</span>
         </a>
@@ -891,13 +898,6 @@ d-sm-none = hide if above sm
         </a>
     </li>
     
-    <li>
-        
-        <a href="/post/the-critical-choice-picking-the-perfect-cto-archetype-for-your-business-startup/">
-            <span>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</span>
-        </a>
-    </li>
-    
 </ul></div>
 </section>
 
@@ -909,6 +909,12 @@ d-sm-none = hide if above sm
     </div>
     <div>
 <ul class="recent-posts">
+    
+    <li>
+        <a href="/post/domain-driven-design-and-refactoring/">
+            <span>Domain Driven Design and Refactoring</span>
+        </a>
+    </li>
     
     <li>
         <a href="/post/john-k.-ousterhout-a-philosophy-of-software-design/">
@@ -934,12 +940,6 @@ d-sm-none = hide if above sm
         </a>
     </li>
     
-    <li>
-        <a href="/post/effective-meeting-rules/">
-            <span>Effective Meeting Rules</span>
-        </a>
-    </li>
-    
 </ul></div>
 </section>
 
@@ -955,7 +955,7 @@ d-sm-none = hide if above sm
         <a href="/tag/avoid-failures/1/">avoid-failures</a>
     </span>
  
-    <span style="font-size: 1.577777777777778em;">
+    <span style="font-size: 1.5em;">
         <a href="/tag/ceos/1/">CEOs</a>
     </span>
  
@@ -971,15 +971,15 @@ d-sm-none = hide if above sm
         <a href="/tag/ctos/1/">CTOs</a>
     </span>
  
-    <span style="font-size: 0.9111111111111112em;">
+    <span style="font-size: 1em;">
         <a href="/tag/developers/1/">developers</a>
     </span>
  
-    <span style="font-size: 1.0222222222222221em;">
+    <span style="font-size: 1.1em;">
         <a href="/tag/development/1/">development</a>
     </span>
  
-    <span style="font-size: 1.2444444444444445em;">
+    <span style="font-size: 1.2000000000000002em;">
         <a href="/tag/efficiency/1/">efficiency</a>
     </span>
  
@@ -987,7 +987,7 @@ d-sm-none = hide if above sm
         <a href="/tag/emails/1/">emails</a>
     </span>
  
-    <span style="font-size: 1.4666666666666668em;">
+    <span style="font-size: 1.4em;">
         <a href="/tag/entrepreneurship/1/">entrepreneurship</a>
     </span>
  
@@ -995,7 +995,7 @@ d-sm-none = hide if above sm
         <a href="/tag/founder/1/">founder</a>
     </span>
  
-    <span style="font-size: 1.4666666666666668em;">
+    <span style="font-size: 1.4em;">
         <a href="/tag/founders/1/">founders</a>
     </span>
  
@@ -1003,15 +1003,15 @@ d-sm-none = hide if above sm
         <a href="/tag/hr/1/">HR</a>
     </span>
  
-    <span style="font-size: 0.9111111111111112em;">
+    <span style="font-size: 1em;">
         <a href="/tag/junior-developers/1/">junior-developers</a>
     </span>
  
-    <span style="font-size: 1.0222222222222221em;">
+    <span style="font-size: 1em;">
         <a href="/tag/linkedin/1/">linkedIn</a>
     </span>
  
-    <span style="font-size: 1.3555555555555556em;">
+    <span style="font-size: 1.4em;">
         <a href="/tag/management/1/">management</a>
     </span>
  
@@ -1023,35 +1023,35 @@ d-sm-none = hide if above sm
         <a href="/tag/posts/1/">posts</a>
     </span>
  
-    <span style="font-size: 1.0222222222222221em;">
+    <span style="font-size: 1em;">
         <a href="/tag/productivity-hacks/1/">productivity-hacks</a>
     </span>
  
-    <span style="font-size: 1.577777777777778em;">
+    <span style="font-size: 1.5em;">
         <a href="/tag/smes/1/">SMEs</a>
     </span>
  
-    <span style="font-size: 0.9111111111111112em;">
+    <span style="font-size: 0.9em;">
         <a href="/tag/softwareengineering/1/">softwareengineering</a>
     </span>
  
-    <span style="font-size: 1.577777777777778em;">
+    <span style="font-size: 1.5em;">
         <a href="/tag/startups/1/">startups</a>
     </span>
  
-    <span style="font-size: 1.0222222222222221em;">
+    <span style="font-size: 1em;">
         <a href="/tag/team-setup/1/">team-setup</a>
     </span>
  
-    <span style="font-size: 0.9111111111111112em;">
+    <span style="font-size: 1em;">
         <a href="/tag/teamlead/1/">teamlead</a>
     </span>
  
-    <span style="font-size: 0.9111111111111112em;">
+    <span style="font-size: 1em;">
         <a href="/tag/techlead/1/">techlead</a>
     </span>
  
-    <span style="font-size: 1.0222222222222221em;">
+    <span style="font-size: 1em;">
         <a href="/tag/tips/1/">tips</a>
     </span>
 

@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2024-01-15T00:00:00Z</updated>
+  <updated>2024-01-22T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -73,6 +73,13 @@ This post is intended for developers eager to enhance their skills. It&#39;s equ
     <summary>Achieving **excellence** in software development demands a balanced mix of hands-on creativity and principled methodology. As a **leader** (CEO, founder, technical lead), you need to **figure out what works for you and your team**!
 
 Now let&#39;s tackle &quot;software design&quot; again, from a slightly **different perspective**...</summary>
+  </entry>
+  <entry>
+    <title>Domain Driven Design and Refactoring</title>
+    <link href="/post/domain-driven-design-and-refactoring/"/>
+    <updated>2024-01-22T00:00:00Z</updated>
+    <id>/post/domain-driven-design-and-refactoring/</id> 
+    <summary>We have reached the 3rd part of our quality code series—now, let&#39;s talk about **Domain-Driven Design (DDD)**. Why does it matter? Because **we solve business problems**, and DDD tackles communication, coding/structure, and complexities in the software industry for an **easily maintainable, scalable solution**.</summary>
   </entry>
   <entry>
     <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>
