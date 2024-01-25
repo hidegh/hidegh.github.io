@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2024-01-22T00:00:00Z</updated>
+  <updated>2024-01-25T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -108,8 +108,18 @@ The idea of working for equity alone is a double-edged sword, raising questions 
     <id>/post/rapid-byte-brilliance-(rbb)-newsletter/</id> 
     <summary>Dear Esteemed **CEOs**, **CTOs**, **VPEs**, and **Technical Leads**, in forging the **excellence** of your software, the **pivotal role** played by your **architects** and **developers**, cannot be overstated.
 
-Steer your team away from subpar videos and articles to **save their valuable time**. Ensure a trajectory of success by emphasizing that your developers **engage with top-tier learning materials**.
+Steer your team away from subpar videos and articles to **save their valuable time**. Ensure a trajectory of success by emphasizing that your developers engage with top-tier learning materials.
 
-[Link to Newsletter posts](http://localhost:4300/category/newsletter/clean-code/1/)</summary>
+Link to Newsletter articles on this site
+Link to the Newsletter on LinkedIn</summary>
+  </entry>
+  <entry>
+    <title>Scaling Secrets - 10 Tips Every CEO Should Know Before Resorting to Microservices</title>
+    <link href="/post/scaling-secrets-10-tips-every-ceo-should-know-before-resorting-to-microservices/"/>
+    <updated>2024-01-25T00:00:00Z</updated>
+    <id>/post/scaling-secrets-10-tips-every-ceo-should-know-before-resorting-to-microservices/</id> 
+    <summary>In the fast-paced world of tech, CEOs, and Founders, please listen up! **Scaling your startup doesn&#39;t always demand complex solutions.**
+
+In fact, simplicity is the key. *** Before diving into the microservices abyss, consider these **10 tips for scalable success**—some are indeed **cost-effective**!</summary>
   </entry>
 </feed>

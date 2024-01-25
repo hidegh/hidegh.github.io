@@ -14246,8 +14246,9 @@ textarea.form-control-lg {
 Custom variables
 */
 :root {
-  --color-delimiter: steelblue;
-  --color-highlight: var(--bs-warning);
+  --color-delimiter: var(--bs-primary-text-emphasis);
+  --color-bold: var(--bs-primary-text-emphasis);
+  --color-highlight: var(--bs-warning-text-emphasis);
   --font-family-wide: "Montserrat", "Segoe UI", "Helvetica Neue", "Source Sans Pro", "Helvetica", "Arial";
   --font-family-tall: "Segoe UI", "Helvetica Neue", "Source Sans Pro", "Helvetica", "Arial";
   --navbar-main-min-height: 4em;
@@ -14303,9 +14304,22 @@ Extensions
 /*
 Quotes
 */
+/*
 blockquote {
-  font-size: inherit !important;
-  line-height: inherit !important;
+    font-size: inherit !important;
+    line-height:  inherit !important;
+}
+*/
+blockquote cite {
+  white-space: nowrap;
+  font-size: 0.8em;
+}
+
+blockquote:not(.quote) {
+  border-left: 0.25em solid var(--color-delimiter);
+  padding-left: 1em;
+  font-size: 1.2em;
+  color: var(--color-highlight);
 }
 
 blockquote.quote:before {
@@ -15204,21 +15218,30 @@ Related posts (3)
 .layout-post strong:not(.fw-default-style),
 .layout-post b:not(.fw-default-style),
 .layout-post .fw-bold:not(.fw-default-style) {
-  color: var(--color-highlight);
+  color: var(--color-bold);
   font-weight: normal !important;
 }
 
 .layout-blog-related strong:not(.fw-default-style),
 .layout-blog-related b:not(.fw-default-style),
 .layout-blog-related .fw-bold:not(.fw-default-style) {
-  color: var(--color-highlight);
+  color: var(--color-bold);
   font-weight: normal !important;
+}
+
+.layout-post .img-this::before {
+  content: "";
+  display: block;
+  padding-bottom: 3em;
+}
+.layout-post .img-this {
+  max-height: 30vh;
 }
 
 .search-results-container strong:not(.fw-default-style),
 .search-results-container b:not(.fw-default-style),
 .search-results-container .fw-bold:not(.fw-default-style) {
-  color: var(--color-highlight);
+  color: var(--color-bold);
   font-weight: normal !important;
 }
 .search-results-container .search-results-wrapper ul.search-results {
