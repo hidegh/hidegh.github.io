@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2024-01-25T00:00:00Z</updated>
+  <updated>2024-01-29T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -80,6 +80,13 @@ Now let&#39;s tackle &quot;software design&quot; again, from a slightly **differ
     <updated>2024-01-22T00:00:00Z</updated>
     <id>/post/domain-driven-design-and-refactoring/</id> 
     <summary>We have reached the 3rd part of our quality code series—now, let&#39;s talk about **Domain-Driven Design (DDD)**. Why does it matter? Because **we solve business problems**, and DDD tackles communication, coding/structure, and complexities in the software industry for an **easily maintainable, scalable solution**.</summary>
+  </entry>
+  <entry>
+    <title>Unit Testing 101</title>
+    <link href="/post/unit-testing-101/"/>
+    <updated>2024-01-29T00:00:00Z</updated>
+    <id>/post/unit-testing-101/</id> 
+    <summary>**If you don&#39;t know the rules, you&#39;ll end up doing things the hard, costly way.** The next step in our journey to quality code is Unit Testing 101 — the other thing that is either not taught or taught using overly simple examples.</summary>
   </entry>
   <entry>
     <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>

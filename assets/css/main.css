@@ -227,7 +227,7 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .taxonomy.tag-cloud .heading, .taxonomy.tag .heading, .taxonomy.category .heading, .taxonomy.tags .heading, .taxonomy.categories .heading, .taxonomy.series .heading, .h1 {
+h6, .h6, h5, .h5, .commenting::before, h4, .h4, h3, .h3, h2, .h2, h1, .taxonomy.tag-cloud .heading, .taxonomy.tag .heading, .taxonomy.category .heading, .taxonomy.tags .heading, .taxonomy.categories .heading, .taxonomy.series .heading, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Source Sans Pro", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
@@ -272,7 +272,7 @@ h4, .h4 {
   }
 }
 
-h5, .h5 {
+h5, .h5, .commenting::before {
   font-size: 1.25rem;
 }
 
@@ -7432,7 +7432,7 @@ textarea.form-control-lg {
   display: inline-flex !important;
 }
 
-.d-none, ul.posts li .post-preview .post-body .post-details .pin .pin-text {
+.d-none, .further-reading .post-navigation.related-posts, ul.posts li .post-preview .post-body .post-details .pin .pin-text {
   display: none !important;
 }
 
@@ -9081,7 +9081,7 @@ textarea.form-control-lg {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.text-body-secondary, ul.posts li .post-preview .post-body .post-details .pin, ul.posts li .post-preview .post-body .post-taxonomy a, ul.posts li .post-preview.card-horizontal .post-picture, .taxonomy.tag .heading .icon,
+.text-body-secondary, .commenting::before, ul.posts li .post-preview .post-body .post-details .pin, ul.posts li .post-preview .post-body .post-taxonomy a, ul.posts li .post-preview.card-horizontal .post-picture, .taxonomy.tag .heading .icon,
 .taxonomy.tag .heading .prefix, .taxonomy.category .heading .icon,
 .taxonomy.category .heading .prefix {
   --bs-text-opacity: 1;
@@ -10646,7 +10646,7 @@ textarea.form-control-lg {
   .d-md-table-cell {
     display: table-cell !important;
   }
-  .d-md-flex {
+  .d-md-flex, .further-reading .post-navigation.related-posts {
     display: flex !important;
   }
   .d-md-inline-flex {
@@ -14281,7 +14281,7 @@ html {
   overflow-y: scroll;
 }
 
-h1, .taxonomy.tag-cloud .heading, .taxonomy.tag .heading, .taxonomy.category .heading, .taxonomy.tags .heading, .taxonomy.categories .heading, .taxonomy.series .heading, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .taxonomy.tag-cloud .heading, .taxonomy.tag .heading, .taxonomy.category .heading, .taxonomy.tags .heading, .taxonomy.categories .heading, .taxonomy.series .heading, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .commenting::before, h6, .h6 {
   margin-top: 1.25em;
   margin-bottom: 0.5em;
 }
@@ -14370,7 +14370,7 @@ Columns for paragraph
 /*
 Patching heading in dark mode
 */
-[data-bs-theme=dark] h1, [data-bs-theme=dark] .taxonomy.tag-cloud .heading, .taxonomy.tag-cloud [data-bs-theme=dark] .heading, [data-bs-theme=dark] .taxonomy.tag .heading, .taxonomy.tag [data-bs-theme=dark] .heading, [data-bs-theme=dark] .taxonomy.category .heading, .taxonomy.category [data-bs-theme=dark] .heading, [data-bs-theme=dark] .taxonomy.tags .heading, .taxonomy.tags [data-bs-theme=dark] .heading, [data-bs-theme=dark] .taxonomy.categories .heading, .taxonomy.categories [data-bs-theme=dark] .heading, [data-bs-theme=dark] .taxonomy.series .heading, .taxonomy.series [data-bs-theme=dark] .heading, [data-bs-theme=dark] .h1, [data-bs-theme=dark] h2, [data-bs-theme=dark] .h2, [data-bs-theme=dark] h3, [data-bs-theme=dark] .h3, [data-bs-theme=dark] h4, [data-bs-theme=dark] .h4, [data-bs-theme=dark] h5, [data-bs-theme=dark] .h5, [data-bs-theme=dark] h6, [data-bs-theme=dark] .h6,
+[data-bs-theme=dark] h1, [data-bs-theme=dark] .taxonomy.tag-cloud .heading, .taxonomy.tag-cloud [data-bs-theme=dark] .heading, [data-bs-theme=dark] .taxonomy.tag .heading, .taxonomy.tag [data-bs-theme=dark] .heading, [data-bs-theme=dark] .taxonomy.category .heading, .taxonomy.category [data-bs-theme=dark] .heading, [data-bs-theme=dark] .taxonomy.tags .heading, .taxonomy.tags [data-bs-theme=dark] .heading, [data-bs-theme=dark] .taxonomy.categories .heading, .taxonomy.categories [data-bs-theme=dark] .heading, [data-bs-theme=dark] .taxonomy.series .heading, .taxonomy.series [data-bs-theme=dark] .heading, [data-bs-theme=dark] .h1, [data-bs-theme=dark] h2, [data-bs-theme=dark] .h2, [data-bs-theme=dark] h3, [data-bs-theme=dark] .h3, [data-bs-theme=dark] h4, [data-bs-theme=dark] .h4, [data-bs-theme=dark] h5, [data-bs-theme=dark] .h5, [data-bs-theme=dark] .commenting::before, [data-bs-theme=dark] h6, [data-bs-theme=dark] .h6,
 [data-bs-theme=dark] .theme-dark-patch h1,
 [data-bs-theme=dark] .theme-dark-patch h2,
 [data-bs-theme=dark] .theme-dark-patch h3,
@@ -14427,7 +14427,7 @@ Extra top/bottom padding/margin (incl. negative)
 .dynamic-headings h4, .dynamic-headings .h4 {
   font-size: 1.5em;
 }
-.dynamic-headings h5, .dynamic-headings .h5 {
+.dynamic-headings h5, .dynamic-headings .h5, .dynamic-headings .commenting::before {
   font-size: 1.25em;
 }
 .dynamic-headings h6, .dynamic-headings .h6 {
@@ -15094,6 +15094,7 @@ ul.posts li {
 ul.posts li .post-preview {
   min-height: 20vh;
   height: 20vh;
+  overflow: hidden;
 }
 ul.posts li .post-preview.card-horizontal {
   flex-direction: row;
@@ -15216,15 +15217,13 @@ Related posts (3)
 }
 
 .layout-post strong:not(.fw-default-style),
-.layout-post b:not(.fw-default-style),
-.layout-post .fw-bold:not(.fw-default-style) {
+.layout-post b:not(.fw-default-style) {
   color: var(--color-bold);
   font-weight: normal !important;
 }
 
 .layout-blog-related strong:not(.fw-default-style),
-.layout-blog-related b:not(.fw-default-style),
-.layout-blog-related .fw-bold:not(.fw-default-style) {
+.layout-blog-related b:not(.fw-default-style) {
   color: var(--color-bold);
   font-weight: normal !important;
 }
@@ -15238,9 +15237,13 @@ Related posts (3)
   max-height: 30vh;
 }
 
+.commenting::before {
+  content: "";
+  display: block;
+}
+
 .search-results-container strong:not(.fw-default-style),
-.search-results-container b:not(.fw-default-style),
-.search-results-container .fw-bold:not(.fw-default-style) {
+.search-results-container b:not(.fw-default-style) {
   color: var(--color-bold);
   font-weight: normal !important;
 }
