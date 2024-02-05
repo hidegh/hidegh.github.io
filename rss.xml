@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2024-01-29T00:00:00Z</updated>
+  <updated>2024-02-05T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -87,6 +87,15 @@ Now let&#39;s tackle &quot;software design&quot; again, from a slightly **differ
     <updated>2024-01-29T00:00:00Z</updated>
     <id>/post/unit-testing-101/</id> 
     <summary>**If you don&#39;t know the rules, you&#39;ll end up doing things the hard, costly way.** The next step in our journey to quality code is Unit Testing 101 — the other thing that is either not taught or taught using overly simple examples.</summary>
+  </entry>
+  <entry>
+    <title>6 Little Lines of Fail - Everything is Distributed</title>
+    <link href="/post/6-little-lines-of-fail-everything-is-distributed/"/>
+    <updated>2024-02-05T00:00:00Z</updated>
+    <id>/post/6-little-lines-of-fail-everything-is-distributed/</id> 
+    <summary>In today&#39;s tech-driven world, even the simplest-looking code can wreak havoc if not handled by seasoned experts. This&#39;s why technical experts are not just &quot;nice to have&quot; for companies, but a crucial lifeline.
+
+**TimeoutException - Probably, this is one of the trickiest errors of all because, sometimes, it&#39;s not even an error!**</summary>
   </entry>
   <entry>
     <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>
