@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2024-02-05T00:00:00Z</updated>
+  <updated>2024-02-12T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -96,6 +96,13 @@ Now let&#39;s tackle &quot;software design&quot; again, from a slightly **differ
     <summary>In today&#39;s tech-driven world, even the simplest-looking code can wreak havoc if not handled by seasoned experts. This&#39;s why technical experts are not just &quot;nice to have&quot; for companies, but a crucial lifeline.
 
 **TimeoutException - Probably, this is one of the trickiest errors of all because, sometimes, it&#39;s not even an error!**</summary>
+  </entry>
+  <entry>
+    <title>Distributed System Design and Fallacies</title>
+    <link href="/post/distributed-system-design-and-fallacies/"/>
+    <updated>2024-02-12T00:00:00Z</updated>
+    <id>/post/distributed-system-design-and-fallacies/</id> 
+    <summary>Distributed applications (APIs)? Avoid technical hiccups! Break free from misconceptions and build truly resilient distributed systems!</summary>
   </entry>
   <entry>
     <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>
