@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2024-02-12T00:00:00Z</updated>
+  <updated>2024-02-19T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -57,6 +57,18 @@ But fear not, we&#39;ve got the solution to supercharge your work!</summary>
     <summary>Following my &quot;Story of staying in Prague&quot; I realized that, in addition to understanding how to make asynchronous communication work for you, recognizing when not to use asynchronous communication is equally crucial.</summary>
   </entry>
   <entry>
+    <title>Rapid Byte Brilliance (RBB) Newsletter</title>
+    <link href="/post/rapid-byte-brilliance-(rbb)-newsletter/"/>
+    <updated>2023-12-21T00:00:00Z</updated>
+    <id>/post/rapid-byte-brilliance-(rbb)-newsletter/</id> 
+    <summary>Dear Esteemed **CEOs**, **CTOs**, **VPEs**, and **Technical Leads**, in forging the **excellence** of your software, the **pivotal role** played by your **architects** and **developers**, cannot be overstated.
+
+Steer your team away from subpar videos and articles to **save their valuable time**. Ensure a trajectory of success by emphasizing that your developers engage with top-tier learning materials.
+
+Link to Newsletter articles on this site
+Link to the Newsletter on LinkedIn</summary>
+  </entry>
+  <entry>
     <title>Getting started - Robert C. Martin - Clean-Code</title>
     <link href="/post/getting-started-robert-c.-martin-clean-code/"/>
     <updated>2024-01-05T00:00:00Z</updated>
@@ -105,6 +117,13 @@ Now let&#39;s tackle &quot;software design&quot; again, from a slightly **differ
     <summary>Distributed applications (APIs)? Avoid technical hiccups! Break free from misconceptions and build truly resilient distributed systems!</summary>
   </entry>
   <entry>
+    <title>Simple API - Integration Problems and Patterns</title>
+    <link href="/post/simple-api-integration-problems-and-patterns/"/>
+    <updated>2024-02-19T00:00:00Z</updated>
+    <id>/post/simple-api-integration-problems-and-patterns/</id> 
+    <summary>Even the simplest distributed system – yes, even integrating against a single API – can pose significant challenges (more than 80% of solutions that SMEs have). **Mind-blowing, right!?**</summary>
+  </entry>
+  <entry>
     <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>
     <link href="/post/the-critical-choice-picking-the-perfect-cto-archetype-for-your-business-startup/"/>
     <updated>2023-10-31T00:00:00Z</updated>
@@ -123,18 +142,6 @@ Selecting the right CTO is a critical decision, one that can significantly impac
     <summary>In the fast-paced world of startups, the journey to success is fraught with uncertainties. Startling statistics reveal that **only a mere 1% of startups manage to reach the coveted IPO stage**, with a significant number meeting their demise within the initial five years[^1].
 
 The idea of working for equity alone is a double-edged sword, raising questions about the feasibility and motivations of those with extensive technical expertise considering this path.</summary>
-  </entry>
-  <entry>
-    <title>Rapid Byte Brilliance (RBB) Newsletter</title>
-    <link href="/post/rapid-byte-brilliance-(rbb)-newsletter/"/>
-    <updated>2023-12-21T00:00:00Z</updated>
-    <id>/post/rapid-byte-brilliance-(rbb)-newsletter/</id> 
-    <summary>Dear Esteemed **CEOs**, **CTOs**, **VPEs**, and **Technical Leads**, in forging the **excellence** of your software, the **pivotal role** played by your **architects** and **developers**, cannot be overstated.
-
-Steer your team away from subpar videos and articles to **save their valuable time**. Ensure a trajectory of success by emphasizing that your developers engage with top-tier learning materials.
-
-Link to Newsletter articles on this site
-Link to the Newsletter on LinkedIn</summary>
   </entry>
   <entry>
     <title>Scaling Secrets - 10 Tips Every CEO Should Know Before Resorting to Microservices</title>

@@ -588,6 +588,10 @@ d-sm-none = hide if above sm
 <p>But the fallacies are just the start. <span class="text-highlight">If you are interested in learning more about distributed system design</span>, I strongly advise you to take this course:</p>
 <p><a href="https://particular.net/adsd">Learn Advanced Distributed Systems Design • Particular Software</a></p>
 <hr>
+<p><span class="text-highlight">Sneak peek:</span></p>
+<p><strong>Fallacies of Distributed Systems #2: Latency is Zero</strong> - One of the fallacies of distributed systems is that latency is zero. In reality, it can take much longer for data to travel between two machines than it does to perform a local operation. Crossing geographical boundaries? Expect even more delay. This can be a major problem for applications that need to be fast and responsive.</p>
+<p><img src="/post/distributed-system-design-and-fallacies/code is liability - latency scaled.png" class="w-100"></img></p>
+<hr>
 <p>📌 Make sure you and your team subscribe (follow me) on <a href="https://www.linkedin.com/in/hideghety/" target="_blank" class="text-decoration-none"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> so you don’t miss out on the latest insights!</p>
 <hr>
 
@@ -605,6 +609,23 @@ d-sm-none = hide if above sm
     <section class="further-reading">
         <h5 class="text-body-secondary">Further Reading</h5>
         <div class="post-navigation related-posts dynamic-headings">
+    
+	<div class="card post-preview">
+		
+		<a class="stretched-link" href="/post/simple-api-integration-problems-and-patterns/"></a>
+
+		<div class="card-body">
+
+			<div class="card-text post-date">Feb 19, 2024</div>
+			<div class="card-title post-title">Simple API - Integration Problems and Patterns</div>
+			<div class="card-text post-content">
+				<p>Even the simplest distributed system – <span class="text-highlight">yes, even integrating against a single API – can pose significant challenges</span> (more than 80% of solutions that SMEs have). <strong>Mind-blowing, right!?</strong></p>
+
+			</div>
+	
+		</div>
+
+	</div>	
     
 	<div class="card post-preview">
 		
@@ -640,30 +661,13 @@ d-sm-none = hide if above sm
 
 	</div>	
     
-	<div class="card post-preview">
-		
-		<a class="stretched-link" href="/post/unit-testing-101/"></a>
-
-		<div class="card-body">
-
-			<div class="card-text post-date">Jan 29, 2024</div>
-			<div class="card-title post-title">Unit Testing 101</div>
-			<div class="card-text post-content">
-				<p><strong>If you don't know the rules, you'll end up doing things the hard, costly way.</strong> The next step in our journey to quality code is Unit Testing 101 — the other thing that is either not taught or …</p>
-
-			</div>
-	
-		</div>
-
-	</div>	
-    
 </div>
         
 
 
 <section class="post-navigation prev-next">
     <div class="btn-group btn-group-block d-flex">
-        <a class="btn btn-sm btn-outline-secondary" prompt="Older" href="/post/the-critical-choice-picking-the-perfect-cto-archetype-for-your-business-startup/" title="The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup"><div>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</div></a>
+        <a class="btn btn-sm btn-outline-secondary" prompt="Older" href="/post/simple-api-integration-problems-and-patterns/" title="Simple API - Integration Problems and Patterns"><div>Simple API - Integration Problems and Patterns</div></a>
         
         <a class="btn btn-sm btn-outline-primary" prompt="Newer" href="/post/6-little-lines-of-fail-everything-is-distributed/" title="6 Little Lines of Fail - Everything is Distributed"><div>6 Little Lines of Fail - Everything is Distributed</div></a>
         </div>
@@ -699,6 +703,9 @@ d-sm-none = hide if above sm
     <div><ul class="aside-navigation series">
 
     <li>
+        <a href="/post/simple-api-integration-problems-and-patterns/">Simple API - Integration Problems and Patterns - distributed-systems</a></li>
+    
+    <li>
         <span class="active">Distributed System Design and Fallacies - distributed-systems</span>
     <li>
         <a href="/post/6-little-lines-of-fail-everything-is-distributed/">6 Little Lines of Fail - Everything is Distributed - distributed-systems</a></li>
@@ -713,6 +720,13 @@ d-sm-none = hide if above sm
         <a class="sticky-link"><i class="fa-solid fa-link"></i></a>
     </div>
     <div><ul class="aside-navigation related-posts">
+    
+    <li>
+        
+        <a href="/post/simple-api-integration-problems-and-patterns/">
+            <span>Simple API - Integration Problems and Patterns</span>
+        </a>
+    </li>
     
     <li>
         
@@ -742,13 +756,6 @@ d-sm-none = hide if above sm
         </a>
     </li>
     
-    <li>
-        
-        <a href="/post/getting-started-robert-c.-martin-clean-code/">
-            <span>Getting started - Robert C. Martin - Clean-Code</span>
-        </a>
-    </li>
-    
 </ul></div>
 </section>
 
@@ -760,6 +767,12 @@ d-sm-none = hide if above sm
     </div>
     <div>
 <ul class="recent-posts">
+    
+    <li>
+        <a href="/post/simple-api-integration-problems-and-patterns/">
+            <span>Simple API - Integration Problems and Patterns</span>
+        </a>
+    </li>
     
     <li>
         <a href="/post/distributed-system-design-and-fallacies/">
@@ -785,12 +798,6 @@ d-sm-none = hide if above sm
         </a>
     </li>
     
-    <li>
-        <a href="/post/domain-driven-design-and-refactoring/">
-            <span>Domain Driven Design and Refactoring</span>
-        </a>
-    </li>
-    
 </ul></div>
 </section>
 
@@ -802,11 +809,11 @@ d-sm-none = hide if above sm
     </div>
     <div><div class="ps-3">
  
-    <span style="font-size: 0.8714285714285714em;">
+    <span style="font-size: 0.9333333333333333em;">
         <a href="/tag/advanced-soa/1/">advanced SOA</a>
     </span>
  
-    <span style="font-size: 0.9428571428571428em;">
+    <span style="font-size: 1em;">
         <a href="/tag/architecture/1/">architecture</a>
     </span>
  
@@ -814,7 +821,7 @@ d-sm-none = hide if above sm
         <a href="/tag/avoid-failures/1/">avoid-failures</a>
     </span>
  
-    <span style="font-size: 1.3714285714285714em;">
+    <span style="font-size: 1.3333333333333335em;">
         <a href="/tag/ceos/1/">CEOs</a>
     </span>
  
@@ -830,15 +837,15 @@ d-sm-none = hide if above sm
         <a href="/tag/ctos/1/">CTOs</a>
     </span>
  
-    <span style="font-size: 1.2285714285714286em;">
+    <span style="font-size: 1.2666666666666666em;">
         <a href="/tag/developers/1/">developers</a>
     </span>
  
-    <span style="font-size: 1.2285714285714286em;">
+    <span style="font-size: 1.2666666666666666em;">
         <a href="/tag/development/1/">development</a>
     </span>
  
-    <span style="font-size: 1.0857142857142859em;">
+    <span style="font-size: 1.0666666666666667em;">
         <a href="/tag/efficiency/1/">efficiency</a>
     </span>
  
@@ -846,7 +853,7 @@ d-sm-none = hide if above sm
         <a href="/tag/emails/1/">emails</a>
     </span>
  
-    <span style="font-size: 1.3em;">
+    <span style="font-size: 1.2666666666666666em;">
         <a href="/tag/entrepreneurship/1/">entrepreneurship</a>
     </span>
  
@@ -854,7 +861,7 @@ d-sm-none = hide if above sm
         <a href="/tag/founder/1/">founder</a>
     </span>
  
-    <span style="font-size: 1.3em;">
+    <span style="font-size: 1.2666666666666666em;">
         <a href="/tag/founders/1/">founders</a>
     </span>
  
@@ -862,15 +869,15 @@ d-sm-none = hide if above sm
         <a href="/tag/hr/1/">HR</a>
     </span>
  
-    <span style="font-size: 1.1571428571428573em;">
+    <span style="font-size: 1.2000000000000002em;">
         <a href="/tag/junior-developers/1/">junior-developers</a>
     </span>
  
-    <span style="font-size: 0.9428571428571428em;">
+    <span style="font-size: 0.9333333333333333em;">
         <a href="/tag/linkedin/1/">linkedIn</a>
     </span>
  
-    <span style="font-size: 1.5142857142857142em;">
+    <span style="font-size: 1.5333333333333332em;">
         <a href="/tag/management/1/">management</a>
     </span>
  
@@ -886,7 +893,7 @@ d-sm-none = hide if above sm
         <a href="/tag/posts/1/">posts</a>
     </span>
  
-    <span style="font-size: 0.9428571428571428em;">
+    <span style="font-size: 0.9333333333333333em;">
         <a href="/tag/productivity-hacks/1/">productivity-hacks</a>
     </span>
  
@@ -894,31 +901,31 @@ d-sm-none = hide if above sm
         <a href="/tag/scaling/1/">scaling</a>
     </span>
  
-    <span style="font-size: 1.3714285714285714em;">
+    <span style="font-size: 1.3333333333333335em;">
         <a href="/tag/smes/1/">SMEs</a>
     </span>
  
-    <span style="font-size: 0.9428571428571428em;">
+    <span style="font-size: 0.9333333333333333em;">
         <a href="/tag/softwareengineering/1/">softwareengineering</a>
     </span>
  
-    <span style="font-size: 1.3714285714285714em;">
+    <span style="font-size: 1.3333333333333335em;">
         <a href="/tag/startups/1/">startups</a>
     </span>
  
-    <span style="font-size: 0.9428571428571428em;">
+    <span style="font-size: 0.9333333333333333em;">
         <a href="/tag/team-setup/1/">team-setup</a>
     </span>
  
-    <span style="font-size: 1.2285714285714286em;">
+    <span style="font-size: 1.2666666666666666em;">
         <a href="/tag/teamlead/1/">teamlead</a>
     </span>
  
-    <span style="font-size: 1.2285714285714286em;">
+    <span style="font-size: 1.2666666666666666em;">
         <a href="/tag/techlead/1/">techlead</a>
     </span>
  
-    <span style="font-size: 0.9428571428571428em;">
+    <span style="font-size: 0.9333333333333333em;">
         <a href="/tag/tips/1/">tips</a>
     </span>
 
