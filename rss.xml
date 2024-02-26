@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2024-02-19T00:00:00Z</updated>
+  <updated>2024-02-26T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -122,6 +122,19 @@ Now let&#39;s tackle &quot;software design&quot; again, from a slightly **differ
     <updated>2024-02-19T00:00:00Z</updated>
     <id>/post/simple-api-integration-problems-and-patterns/</id> 
     <summary>Even the simplest distributed system – yes, even integrating against a single API – can pose significant challenges (more than 80% of solutions that SMEs have). **Mind-blowing, right!?**</summary>
+  </entry>
+  <entry>
+    <title>Designing Microservices the Right Way</title>
+    <link href="/post/designing-microservices-the-right-way/"/>
+    <updated>2024-02-26T00:00:00Z</updated>
+    <id>/post/designing-microservices-the-right-way/</id> 
+    <summary>**Remember, business goals are rarely about having a top-notch system!**
+
+Finally, we have arrived at the point where we can discuss the pinnacle of modern software architecture: **microservices**.
+
+When it comes to designing a software system, it&#39;s not easy. **Designing microservices is even harder**. And even if you do it right, there are situations where you will run into issues.
+
+This is why I always suggest that before contemplating Microservices, **one should always consider scaling up**. Here&#39;s my article on LinkedIn about [10 scaling-up possibilities before considering microservices](https://www.linkedin.com/feed/update/urn:li:activity:7156296447221514240/) - also available [here](/post/scaling-secrets-10-tips-every-ceo-should-know-before-resorting-to-microservices/).</summary>
   </entry>
   <entry>
     <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>
