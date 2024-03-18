@@ -3,7 +3,7 @@
   <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
   <link href="/rss.xml/" rel="self"/>
   <link href="/"/>
-  <updated>2024-02-26T00:00:00Z</updated>
+  <updated>2024-03-18T00:00:00Z</updated>
   <id>/</id>
   <author>
     <name></name>
@@ -135,6 +135,15 @@ Finally, we have arrived at the point where we can discuss the pinnacle of moder
 When it comes to designing a software system, it&#39;s not easy. **Designing microservices is even harder**. And even if you do it right, there are situations where you will run into issues.
 
 This is why I always suggest that before contemplating Microservices, **one should always consider scaling up**. Here&#39;s my article on LinkedIn about [10 scaling-up possibilities before considering microservices](https://www.linkedin.com/feed/update/urn:li:activity:7156296447221514240/) - also available [here](/post/scaling-secrets-10-tips-every-ceo-should-know-before-resorting-to-microservices/).</summary>
+  </entry>
+  <entry>
+    <title>Microservices Communication and Conversation Patterns</title>
+    <link href="/post/microservices-communication-and-conversation-patterns/"/>
+    <updated>2024-03-18T00:00:00Z</updated>
+    <id>/post/microservices-communication-and-conversation-patterns/</id> 
+    <summary>This talk is truly impressive!
+Let&#39;s conduct this business analysis for scaling.
+Let&#39;s explore what generic lessons the food industry offers for software engineers.</summary>
   </entry>
   <entry>
     <title>The Critical Choice - Picking the Perfect CTO Archetype for Your Business / Startup</title>
