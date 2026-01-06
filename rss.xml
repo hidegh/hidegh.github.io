@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Reflective Tech Consulting For Succesful Projects</title><subtitle>Helping others with useful content</subtitle>
+  <link href="/rss.xml/" rel="self"/>
+  <link href="/"/>
+  <updated>2024-03-18T00:00:00Z</updated>
+  <id>/</id>
+  <author>
+    <name></name>
+  </author>
+  <entry>
+    <title>The Seven Stages of Expertise in Software Engineering</title>
+    <link href="/post/the-seven-stages-of-expertise-in-software-engineering/"/>
+    <updated>2023-04-25T00:00:00Z</updated>
+    <id>/post/the-seven-stages-of-expertise-in-software-engineering/</id> 
+    <summary>This article is still **relevant for any startup or company involved in software development**. It contains useful informations - just like &quot;Clean Code&quot; by Robert C Martin - **details within this article are timeless**.
+
+I first came across this article around 2016, when I noticed a large **disparity between the usual junior-mid-senior scaling** of developers. This scaling system, unlike others, is **universal**, easy to understand, and **the bear hunting analogy** used in the original article by Meilir Page-Jones makes it a **humorous and enjoyable read**.
+
+Since then, the original page has been taken down (an archive can be found here). With the permission of the author, I am allowed to distribute the original article.
+
+I made some slight changes by adding additional titles and styling. **Since there is more behind the seven stages, it is likely to be referenced frequently.**
+
+**We hope you enjoy reading this article and that it helps your next projects be successful.**</summary>
+  </entry>
+  <entry>
+    <title>Effective Email Management for Busy Leaders</title>
+    <link href="/post/effective-email-management-for-busy-leaders/"/>
+    <updated>2023-11-08T00:00:00Z</updated>
+    <id>/post/effective-email-management-for-busy-leaders/</id> 
+    <summary>Efficient email management is a skill that can transform your daily routine and boost your team&#39;s productivity.
+Take the time to refine your email habits, and watch your effectiveness soar!</summary>
+  </entry>
+  <entry>
+    <title>Effective Async Communication for Busy Leaders</title>
+    <link href="/post/effective-async-communication-for-busy-leaders/"/>
+    <updated>2023-11-09T00:00:00Z</updated>
+    <id>/post/effective-async-communication-for-busy-leaders/</id> 
+    <summary>Tired of constant interruptions?
+Say goodbye to productivity killers!
+
+Context switching in synchronous chat programs can be a real productivity killer, leading to increased interruptions and reduced efficiency.
+But fear not, we&#39;ve got the solution to supercharge your work!</summary>
+  </entry>
+  <entry>
+    <title>Effective Meeting Rules</title>
+    <link href="/post/effective-meeting-rules/"/>
+    <updated>2023-11-10T00:00:00Z</updated>
+    <id>/post/effective-meeting-rules/</id> 
+    <summary>Meetings can be a pain—we&#39;ve all been there. The problem? They often lack a plan, decisions are last-minute, and real progress is rare. But fear not! Let&#39;s turn things around with these simple rules to make your meetings actually count!</summary>
+  </entry>
+  <entry>
+    <title>When NOT to use Async Communication</title>
+    <link href="/post/when-not-to-use-async-communication/"/>
+    <updated>2023-11-22T00:00:00Z</updated>
+    <id>/post/when-not-to-use-async-communication/</id> 
+    <summary>Following my &quot;Story of staying in Prague&quot; I realized that, in addition to understanding how to make asynchronous communication work for you, recognizing when not to use asynchronous communication is equally crucial.</summary>
+  </entry>
+  <entry>
+    <title>Getting started - Robert C. Martin - Clean-Code</title>
+    <link href="/post/getting-started-robert-c.-martin-clean-code/"/>
+    <updated>2024-01-05T00:00:00Z</updated>
+    <id>/post/getting-started-robert-c.-martin-clean-code/</id> 
+    <summary>**Knowing the right things** is the way to move forward **quickly** and produce **great results**.
+
+This post is intended for developers eager to enhance their skills. It&#39;s equally valuable for **CEOs**, **CTOs**, **VPEs**, and **Technical Leads** who oversee a team and aspire to deliver **quality products**. Half of the videos do deal with management related-topics.</summary>
+  </entry>
+  <entry>
+    <title>John K. Ousterhout - A Philosophy of Software Design</title>
+    <link href="/post/john-k.-ousterhout-a-philosophy-of-software-design/"/>
+    <updated>2024-01-15T00:00:00Z</updated>
+    <id>/post/john-k.-ousterhout-a-philosophy-of-software-design/</id> 
+    <summary>Achieving **excellence** in software development demands a balanced mix of hands-on creativity and principled methodology. As a **leader** (CEO, founder, technical lead), you need to **figure out what works for you and your team**!
+
+Now let&#39;s tackle &quot;software design&quot; again, from a slightly **different perspective**...</summary>
+  </entry>
+  <entry>
+    <title>Domain Driven Design and Refactoring</title>
+    <link href="/post/domain-driven-design-and-refactoring/"/>
+    <updated>2024-01-22T00:00:00Z</updated>
+    <id>/post/domain-driven-design-and-refactoring/</id> 
+    <summary>We have reached the 3rd part of our quality code series—now, let&#39;s talk about **Domain-Driven Design (DDD)**. Why does it matter? Because **we solve business problems**, and DDD tackles communication, coding/structure, and complexities in the software industry for an **easily maintainable, scalable solution**.</summary>
+  </entry>
+  <entry>
+    <title>Unit Testing 101</title>
+    <link href="/post/unit-testing-101/"/>
+    <updated>2024-01-29T00:00:00Z</updated>
+    <id>/post/unit-testing-101/</id> 
+    <summary>**If you don&#39;t know the rules, you&#39;ll end up doing things the hard, costly way.** The next step in our journey to quality code is Unit Testing 101 — the other thing that is either not taught or taught using overly simple examples.</summary>
+  </entry>
+  <entry>
+    <title>Distributed System Design and Fallacies</title>
+    <link href="/post/distributed-system-design-and-fallacies/"/>
+    <updated>2024-02-12T00:00:00Z</updated>
+    <id>/post/distributed-system-design-and-fallacies/</id> 
+    <summary>Distributed applications (APIs)? Avoid technical hiccups! Break free from misconceptions and build truly resilient distributed systems!</summary>
+  </entry>
+  <entry>
+    <title>Microservices Communication and Conversation Patterns</title>
+    <link href="/post/microservices-communication-and-conversation-patterns/"/>
+    <updated>2024-03-18T00:00:00Z</updated>
+    <id>/post/microservices-communication-and-conversation-patterns/</id> 
+    <summary>This talk is truly impressive!
+Let&#39;s conduct this business analysis for scaling.
+Let&#39;s explore what generic lessons the food industry offers for software engineers.</summary>
+  </entry>
+  <entry>
+    <title>6 Little Lines of Fail - Everything is Distributed</title>
+    <link href="/post/6-little-lines-of-fail-everything-is-distributed/"/>
+    <updated>2024-02-05T00:00:00Z</updated>
+    <id>/post/6-little-lines-of-fail-everything-is-distributed/</id> 
+    <summary>In today&#39;s tech-driven world, even the simplest-looking code can wreak havoc if not handled by seasoned experts. This&#39;s why technical experts are not just &quot;nice to have&quot; for companies, but a crucial lifeline.
+
+**TimeoutException - Probably, this is one of the trickiest errors of all because, sometimes, it&#39;s not even an error!**</summary>
+  </entry>
+  <entry>
+    <title>Microservices RED Flags - Designing Microservices the Right Way</title>
+    <link href="/post/microservices-red-flags-designing-microservices-the-right-way/"/>
+    <updated>2024-02-26T00:00:00Z</updated>
+    <id>/post/microservices-red-flags-designing-microservices-the-right-way/</id> 
+    <summary>**Remember, business goals are rarely about having a top-notch system!**
+
+Finally, we have arrived at the point where we can discuss the pinnacle of modern software architecture: **microservices**.
+
+When it comes to designing a software system, it&#39;s not easy. **Designing microservices is even harder**. And even if you do it right, there are situations where you will run into issues.
+
+This is why I always suggest that before contemplating Microservices, **one should always consider scaling up**. Here&#39;s my article on LinkedIn about [10 scaling-up possibilities before considering microservices](https://www.linkedin.com/feed/update/urn:li:activity:7156296447221514240/) - also available [here](/post/scaling-secrets-10-tips-every-ceo-should-know-before-resorting-to-microservices/).</summary>
+  </entry>
+  <entry>
+    <title>Simple API - Integration Problems and Patterns</title>
+    <link href="/post/simple-api-integration-problems-and-patterns/"/>
+    <updated>2024-02-19T00:00:00Z</updated>
+    <id>/post/simple-api-integration-problems-and-patterns/</id> 
+    <summary>Even the simplest distributed system – yes, even integrating against a single API – can pose significant challenges (more than 80% of solutions that SMEs have). **Mind-blowing, right!?**</summary>
+  </entry>
+  <entry>
+    <title>Scaling Secrets - 10 Tips Every CEO Should Know Before Resorting to Microservices</title>
+    <link href="/post/scaling-secrets-10-tips-every-ceo-should-know-before-resorting-to-microservices/"/>
+    <updated>2024-01-25T00:00:00Z</updated>
+    <id>/post/scaling-secrets-10-tips-every-ceo-should-know-before-resorting-to-microservices/</id> 
+    <summary>In the fast-paced world of tech, CEOs, and Founders, please listen up! **Scaling your startup doesn&#39;t always demand complex solutions.**
+
+In fact, simplicity is the key. *** Before diving into the microservices abyss, consider these **10 tips for scalable success**—some are indeed **cost-effective**!</summary>
+  </entry>
+</feed>
